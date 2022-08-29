@@ -5,12 +5,16 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body{
+    width: 100%;
+}
+
 .super_container {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: rgb(219, 219, 219);
 
-    /* border: 1px solid greenyellow; */
+    border: 1px solid greenyellow;
 }
 
 header {
@@ -19,12 +23,12 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 110px;
     transition-duration: 600ms;
     /* background-color: rgb(202, 14, 14); */
 
-    /* border: 1px solid rgb(22, 0, 219); */
+    border: 1px solid rgb(22, 0, 219);
 }
 
 .top_header {
@@ -44,10 +48,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 80vw;
+    width: 99%;
     height: 40px;
 
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .box_logo {
@@ -58,7 +62,7 @@ header {
     width: 160px;
     flex-wrap: wrap;
 
-    /* border: 1px solid blue; */
+    border: 1px solid rgb(0, 255, 0);
 }
 
 .box_logo p {
@@ -66,7 +70,7 @@ header {
     color: white;
     flex-wrap: wrap;
 
-    /* border: 1px solid red; */
+    border: 1px solid rgb(0, 255, 255);
 }
 
 .logo p {
@@ -86,7 +90,7 @@ header {
     width: 700px;
     height: 100%;
 
-    /* border: 2px solid saddlebrown; */
+    border: 1px solid rgb(56, 11, 255);
 }
 
 .top_menu ul {
@@ -97,7 +101,7 @@ header {
     height: 100%;
     list-style: none;
 
-    /* border: 1px solid rgb(21, 255, 0); */
+    border: 1px solid rgb(21, 255, 0);
 }
 
 .top_menu a {
@@ -108,7 +112,7 @@ header {
     transition-duration: 600ms;
     text-decoration: none;
 
-    /* border: 1px solid rgb(0, 255, 179); */
+    border: 1px solid rgb(0, 255, 179);
 }
 
 .ul_logo_social {
@@ -132,7 +136,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 
     /* border: 1px solid greenyellow; */
@@ -144,7 +148,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .section1_box_text {
@@ -158,7 +162,7 @@ header {
     animation-iteration-count: infinite;
     animation-direction: initial;
 
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .section1_box_text h1 {
@@ -168,7 +172,7 @@ header {
     color: white;
     padding-bottom: 20px;
 
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
 }
 
 .section1_box_text p {
@@ -180,7 +184,7 @@ header {
     /* color: #3796b3; */
     color: #7500fa;
 
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .section1_box_text p:hover {
@@ -195,7 +199,7 @@ header {
 .section2 {
     background-color: #000000;
 
-    /* border: 1px solid rgb(255, 0, 221); */
+    border: 2px solid rgb(255, 0, 221);
 }
 
 .section2_box {
@@ -203,6 +207,8 @@ header {
     grid-template-areas: "a1 a1 a1 a1 a1 a1"
         "a2 a2 a3 a3 a3 a3"
         "a2 a2 a3 a3 a3 a3";
+        align-items: center;
+        justify-content: center;      
 }
 
 .item1 {
@@ -218,51 +224,51 @@ header {
 }
 
 .section2_box {
-    width: 100vw;
-    max-width: 1200px;
-    height: 99vh;
+    width: 100%;
+    max-width: 1100px;
+    height: 99%;
 
-    /* border: 5px solid rgb(255, 0, 0); */
+    border: 2px solid rgb(255, 0, 0);
 }
 
 h2 {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 80px;
     font-size: 2.5em;
     color: white;
     text-align: center;
 
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
 }
 
 .section2 img {
     width: 95%;
-    max-width: 250px;
-    min-width: 250px;
+    max-width: 210px;
+    min-width: 210px;
     border-radius: 3%;
 
-    /* border: 1px solid red */
+    border: 1px solid red
 }
 
 h3 {
     font-size: 1.7em;
     color: white;
     padding-bottom: 40px;
+
+    border: 1px solid greenyellow;
 }
 
 .section2_box_text {
-    width: 800px;
-    height: 100vh;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 700px;   
+    padding: 20px; 
+
+    border: 2px solid red;
 }
 
 .section2 p {
     font-size: 1.2em;
     color: white;
 
-    /* border: 1px solid rgb(115, 255, 0); */
+    border: 1px solid rgb(115, 255, 0);
 }
 
 
