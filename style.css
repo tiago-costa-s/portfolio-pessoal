@@ -6,13 +6,16 @@
 }
 
 body {
-    width: 100%;
+    width: 99vw;
+    background-color: #5201af;
+
+    border: 2px solid red;
 }
 
 .super_container {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    background-color: rgb(219, 219, 219);
+    /* background-color: rgb(219, 219, 219); */
 
     /* border: 1px solid greenyellow; */
 }
@@ -23,7 +26,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     height: 110px;
     transition-duration: 600ms;
 
