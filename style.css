@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.super_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(219, 219, 219);
+
+    /* border: 1px solid greenyellow; */
+}
+
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 110px;
+    transition-duration: 600ms;
+    /* background-color: rgb(202, 14, 14); */
+
+    /* border: 1px solid rgb(22, 0, 219); */
+}
+
+.top_header {
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+
+/* Alterar o fundo ao passar o mouse */
+/* header:hover {   
+    border-bottom: 1px solid rgba(255, 255, 255, 0.103);
+} */
+
+.top_navigator {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80vw;
+    height: 40px;
+
+    /* border: 1px solid red; */
+}
+
+.box_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 160px;
+    flex-wrap: wrap;
+
+    /* border: 1px solid blue; */
+}
+
+.box_logo p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    flex-wrap: wrap;
+
+    /* border: 1px solid red; */
+}
+
+.logo p {
+    font-size: 2em;
+    padding: 8px;
+    border-radius: 15%;
+    background-image: linear-gradient(to right, rgb(199, 15, 255), rgb(68, 0, 255));
+
+    /* border: 1px solid greenyellow */
+}
+
+.logo_text_p {
+    font-size: .5em;
+}
+
+.top_menu {
+    width: 700px;
+    height: 100%;
+
+    /* border: 2px solid saddlebrown; */
+}
+
+.top_menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    list-style: none;
+
+    /* border: 1px solid rgb(21, 255, 0); */
+}
+
+.top_menu a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    transition-duration: 600ms;
+    text-decoration: none;
+
+    /* border: 1px solid rgb(0, 255, 179); */
+}
+
+.ul_logo_social {
+    width: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top_menu a:hover {
+    color: #5201af;
+}
+
+.top_menu img {
+    width: 18px;
+}
+
+.section_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+    /* border: 1px solid greenyellow; */
+}
+
+.section1 {
+    background-image: url("/assets/images/notebook-G.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* border: 1px solid red; */
+}
+
+.section1_box_text {
+    width: 70%;
+    max-width: 1000px;
+    min-width: 600px;
+    border-right: 1px solid white;
+
+    animation-name: efeitoDigitacao;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+
+    /* border: 1px solid red; */
+}
+
+.section1_box_text h1 {
+    width: 350px;
+    font-style: normal;
+    font-size: 4em;
+    color: white;
+    padding-bottom: 20px;
+
+    /* border: 1px solid blue; */
+}
+
+.section1_box_text p {
+    width: 500px;
+    font-size: 1.7em;
+    font-weight: 500;
+    font-style: normal;
+    padding-bottom: 20px;
+    /* color: #3796b3; */
+    color: #7500fa;
+
+    /* border: 1px solid red; */
+}
+
+.section1_box_text p:hover {
+    color: #3c0280;
+}
+
+
+
+
+
+/* SECTION 2 */
+.section2 {
+    background-color: #000000;
+
+    /* border: 1px solid rgb(255, 0, 221); */
+}
+
+.section2_box {
+    display: grid;
+    grid-template-areas: "a1 a1 a1 a1 a1 a1"
+        "a2 a2 a3 a3 a3 a3"
+        "a2 a2 a3 a3 a3 a3";
+}
+
+.item1 {
+    grid-area: a1;
+}
+
+.item2 {
+    grid-area: a2;
+}
+
+.item3 {
+    grid-area: a3;
+}
+
+.section2_box {
+    width: 100vw;
+    max-width: 1200px;
+    height: 99vh;
+
+    /* border: 5px solid rgb(255, 0, 0); */
+}
+
+h2 {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+
+    /* border: 1px solid blue; */
+}
+
+.section2 img {
+    width: 95%;
+    max-width: 250px;
+    min-width: 250px;
+    border-radius: 3%;
+
+    /* border: 1px solid red */
+}
+
+h3 {
+    font-size: 1.7em;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.section2_box_text {
+    width: 800px;
+    height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section2 p {
+    font-size: 1.2em;
+    color: white;
+
+    /* border: 1px solid rgb(115, 255, 0); */
+}
+
+
+
+
+
+
+
+
+
+/* SECTION3 */
+.section3 {
+    background-color: #131313;
+}
+
+button {
+    font-size: 2.2em;
+    color: white;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 60px;
+    display: none;
+}
+
+/* Animações */
+@keyframes efeitoDigitacao {
+    from {
+
+        border-right-color: rgba(255, 255, 255, 0.733)
+            /* color: #7500fa; */
+    }
+
+    to {
+        border-right-color: transparent;
+        /* color: blue; */
+    }
+}
+
+
+/*Media Query*/
+
+/* Tablet Ipad Pro */
+@media (max-width: 1024px) {
+
+    /* Inserir cor de fundo ao menu */
+    #top_header {
+        background-color: rgb(0, 0, 0);
+
+        /* border: 1px solid rgb(22, 0, 219); */
+    }
+
+
+    /* Ocultar o texto da logo */
+    .logo_text p {
+        display: none;
+    }
+
+
+    /* Ocultar Icones redes Sociais */
+    .ul_logo_social {
+        display: none;
+    }
+
+
+    /* Exibir burger menu */
+    button {
+
+        display: block;
+    }
+}
+
+/* Iphone X */
+@media(max-width: 375px) {
+
+    #top_header {
+        width: 100vw;
+        height: 60px;
+
+        /* border: 1px solid rgb(22, 0, 219); */
+    }
+
+    .top_navigator {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+        height: 100%;
+
+        border: 1px solid red;
+    }
+
+    .box_logo {
+        width: auto;
+
+        /* border: 2px solid blue; */
+    }
+
+    .logo p {
+        font-size: 1em;
+
+        /* border: 1px solid greenyellow */
+    }
+
+    .top_menu {
+
+        width: 100%;
+        border: 1px solid saddlebrown;
+    }
+
+    .top_menu ul {
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        list-style: none;
+
+        /* border: 1px solid rgb(21, 255, 0); */
+    }
+
+    .top_menu a {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+        font-weight: 500;
+        color: white;
+        transition-duration: 600ms;
+        text-decoration: none;
+
+        /* border: 1px solid rgb(0, 255, 179); */
+    }
+
+    .ul_logo_social {
+        width: 70px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .top_menu a:hover {
+        color: #7500fa;
+    }
+
+    .top_menu img {
+        width: 18px;
+    }
+
+    .section_center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+
+        /* border: 1px solid greenyellow; */
+    }
+
+    .section1 {
+        background-image: url("/assets/images/notebook-G.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        /* border: 1px solid red; */
+    }
+
+    .section1_box_text {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        border-right: 1px solid white;
+
+        animation-name: efeitoDigitacao;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: initial;
+
+
+        /* border: 1px solid red; */
+    }
+
+    .section1_box_text h1 {
+        width: 100%;
+        font-style: normal;
+        font-size: 3em;
+
+        padding-bottom: 20px;
+
+
+        /* border: 1px solid blue; */
+    }
+
+    .section1_box_text p {
+        width: 100%;
+        font-size: 1.2em;
+        font-weight: 500;
+        font-style: normal;
+        padding-bottom: 20px;
+
+
+        /* border: 1px solid red; */
+    }
+
+    .section1_box_text p:hover {
+        color: #6005c9;
+    }
+
+    .section2 {
+        background-color: #000000;
+    }
+
+    .section3 {
+        background-color: #060606;
+    }
+
+
+}
