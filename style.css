@@ -9,7 +9,7 @@ body {
     width: 99vw;
     background-color: #5201af;
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .super_container {
@@ -95,7 +95,7 @@ header {
     max-width: 700px;
     height: 100%;
 
-    border: 1px solid rgb(56, 11, 255);
+    /* border: 1px solid rgb(56, 11, 255); */
 }
 
 .top_menu ul {
@@ -141,7 +141,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 
     /* border: 1px solid greenyellow; */
@@ -252,7 +252,7 @@ h2 {
     font-size: 1.2em;
     color: white;
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .item2 h3 {
@@ -284,11 +284,11 @@ h2 {
 }
 
 .section2_box {
-    width: 100%;
+    width: 100vw;
     max-width: 1100px;
     height: 99%;
 
-    /* border: 2px solid rgb(255, 0, 0); */
+    /* border: 1px solid rgb(255, 0, 0); */
 }
 
 
@@ -434,7 +434,7 @@ button {
 
 /* SMATPHONE IPHONE 6 667 x 375*/
 
-@media (max-width: 667px) {
+@media (max-width: 375px) {
 
     /* HEADER */
 
@@ -443,7 +443,7 @@ button {
     .top_navigator {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         width: 99%;
         height: 40px;
 
@@ -469,7 +469,13 @@ button {
     /* Section1 */
 
 
-    
+    .item3 img {
+        width: 100%;
+        max-width: 70px;
+        height: 20px;
+      
+
+    }
     
 
    
