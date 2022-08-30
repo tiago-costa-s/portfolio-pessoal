@@ -58,7 +58,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;    
+    justify-content: space-around;
     flex-wrap: wrap;
 
     border: 1px solid rgb(0, 255, 0);
@@ -234,7 +234,7 @@ h2 {
 .item1 img {
     width: 100%;
     max-width: 210px;
-    min-width: 80px;
+    min-width: 50px;
     border-radius: 5%;
 
     border: 3px solid blue;
@@ -247,10 +247,10 @@ h2 {
     max-width: 700px;
     /* min-width: 500px; */
     padding: 20px;
-    font-size: 1.2em;
+    font-size: 1em;
     color: white;
 
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .item2 h3 {
@@ -311,8 +311,9 @@ button {
     border: none;
     background-color: transparent;
     position: absolute;
-
     display: none;
+
+    border: 1px solid red;
 }
 
 
@@ -339,13 +340,13 @@ button {
 @media screen and (max-width: 375px) {
     /* HEADER */
 
-    header{
+    header {
         position: fixed;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-    
+
         height: 70px;
         transition-duration: 600ms;
         background-color: black;
@@ -354,7 +355,7 @@ button {
     /* .top_header {
         display: none;
     } */
-    
+
 
     /* Reduzir Logo */
     /* Texto logo TC */
@@ -375,16 +376,18 @@ button {
         display: none;
     }
 
+   
+   
 
-
-
-
-    /* Ocultar icones github e linkedin*/
-
-    /* Ocultar menu */
+    /* Ocultar menu Github e Linkedin*/
+    .top_menu ul {
+        display: none;
+    }
 
     /* Exibir Burger Menu */
-
+    button {            
+        display: block;
+    }
 
     /* SECTION 1 */
     /* SECTION 2 */
