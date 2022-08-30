@@ -3,7 +3,6 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-
 }
 
 html {
@@ -28,11 +27,11 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 110px;
     transition-duration: 600ms;
 
-    border: 2px solid red;
+    border: 2px solid rgb(255, 174, 0);
 }
 
 .top_header {
@@ -60,7 +59,8 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 160px;
+    width: 100%;
+    max-width: 160px;
     flex-wrap: wrap;
 
     border: 1px solid rgb(0, 255, 0);
@@ -74,6 +74,7 @@ header {
     /* border: 1px solid rgb(0, 255, 255); */
 }
 
+/* Texto logo TC */
 .logo p {
     font-size: 2em;
     padding: 8px;
@@ -83,20 +84,22 @@ header {
     /* border: 1px solid greenyellow */
 }
 
+/* Nome Tiago Costa */
 .logo_text {
     font-size: 1em;
 }
 
+/* Texto Desenvolvimento Web */
 .logo_text_p {
     font-size: .5em;
 }
 
 .top_menu {
-    width: 80%;
-    max-width: 700px;
+    width: 100%;
+    /* max-width: 700px; */
     height: 100%;
 
-    /* border: 1px solid rgb(56, 11, 255); */
+    border: 1px solid rgb(255, 11, 255);
 }
 
 .top_menu ul {
@@ -183,7 +186,7 @@ header {
     border: 1px solid blue;
 }
 
-.section1_box_text p {   
+.section1_box_text p {
     font-size: 1em;
     font-weight: 500;
     font-style: normal;
@@ -217,7 +220,7 @@ header {
     justify-content: center;
 }
 
-h2 {   
+h2 {
     padding-top: 20px;
     font-size: 2.5em;
     color: white;
@@ -335,7 +338,43 @@ button {
 /*Media Queries*/
 
 /* Smartphone Iphone 375 x 667 */
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 375px) {
+    /* HEADER */
+
+    /* Reduzir Logo */
+    /* Texto logo TC */
+    .logo p {
+        font-size: 1.2em;
+        padding: 5px;
+        /* border: 1px solid greenyellow */
+    }
+
+    /* Ocultar textos da logo */
+    /* Nome Tiago Costa */
+    .logo_text {
+        display: none;
+    }
+
+    /* Texto Desenvolvimento Web */
+    .logo_text_p {
+        display: none;
+    }
+
+
+
+
+
+    /* Ocultar icones github e linkedin*/
+
+    /* Ocultar menu */
+
+    /* Exibir Burger Menu */
+
+
+    /* SECTION 1 */
+    /* SECTION 2 */
+    /* SECTION 3 */
+}
 
 
 
