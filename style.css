@@ -58,9 +58,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 160px;
+    justify-content: space-around;    
     flex-wrap: wrap;
 
     border: 1px solid rgb(0, 255, 0);
@@ -340,6 +338,23 @@ button {
 /* Smartphone Iphone 375 x 667 */
 @media screen and (max-width: 375px) {
     /* HEADER */
+
+    header{
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+        height: 70px;
+        transition-duration: 600ms;
+        background-color: black;
+    }
+
+    /* .top_header {
+        display: none;
+    } */
+    
 
     /* Reduzir Logo */
     /* Texto logo TC */
