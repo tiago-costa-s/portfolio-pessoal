@@ -31,7 +31,7 @@ header {
     height: 110px;
     transition-duration: 600ms;
 
-    /* border: 2px solid rgb(255, 174, 0); */
+    /* border: 4px solid rgb(255, 174, 0); */
 }
 
 .top_header {
@@ -51,7 +51,7 @@ header {
     width: 100%;
     height: 40px;
 
-    /* border: 1px solid rgb(8, 0, 255); */
+    /* border: 3px solid rgb(0, 47, 255); */
 }
 
 .box_logo {
@@ -60,31 +60,32 @@ header {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: auto;
 
-    /* border: 1px solid rgb(0, 255, 0); */
+    /* border: 2px solid rgb(0, 255, 0); */
 }
 
 .box_logo p {
     font-family: 'Roboto', sans-serif;
     color: white;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
-    /* border: 1px solid rgb(0, 255, 255); */
+    /* border: 1px solid rgb(255, 0, 0); */
 }
 
 /* Texto logo TC */
 .logo p {
     font-size: 2em;
-    padding: 8px;
+    padding: 20px;
     border-radius: 15%;
     background-image: linear-gradient(to right, rgb(199, 15, 255), rgb(68, 0, 255));
 
-    /* border: 1px solid greenyellow */
+    /* border: 1px solid red */
 }
 
 /* Nome Tiago Costa */
 .logo_text {
-    font-size: 1em;
+    font-size: 1.4em;
 }
 
 /* Texto Desenvolvimento Web */
@@ -97,7 +98,7 @@ header {
     max-width: 700px;
     height: 100%;
 
-    /* border: 1px solid rgb(255, 11, 255); */
+    /* border: 2px solid rgb(255, 11, 255); */
 }
 
 .top_menu ul {
@@ -108,7 +109,7 @@ header {
     height: 100%;
     list-style: none;
 
-    /* border: 1px solid rgb(21, 255, 0); */
+    /* border: 2px solid rgb(21, 255, 0); */
 }
 
 .top_menu a {
@@ -119,7 +120,7 @@ header {
     transition-duration: 600ms;
     text-decoration: none;
 
-    /* border: 1px solid rgb(0, 255, 179); */
+    /* border: 1px solid rgb(255, 0, 34); */
 }
 
 .top_icons_social_midia {
@@ -142,7 +143,7 @@ header {
     height: 100%;
     list-style: none;
 
-    /* border: 1px solid rgb(3, 255, 117); */
+    /* border: 2px solid rgb(3, 255, 117); */
 
 }
 
@@ -157,15 +158,14 @@ header {
 }
 
 .burger_menu {
-    width: auto;
-    height: 100%;    
+    height: 100%;
     display: none;
 
     /* border: 1px solid greenyellow; */
 }
 
 .burger_menu button {
-    font-size: 2em;
+    font-size: 5em;
     color: white;
     border: none;
     background-color: transparent;
@@ -175,8 +175,8 @@ header {
     /* border: 1px solid red; */
 }
 
-/* SECTIONS */
-.sections {
+/* SESSÃO */
+.sessao {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,14 +184,14 @@ header {
     width: 100%;
     height: 100vh;
 
-    /* border: 1px solid greenyellow; */
+    /* border: 4px solid green; */
 }
 
 
 /* SECTION 1 */
 
-.section1 {
-    background-image: url("/assets/images/notebook-G.jpg");
+.s1 {
+    background-image: url("https://i.postimg.cc/tJVnMnxx/notebook-M.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -199,11 +199,11 @@ header {
     /* border: 2px solid rgb(255, 0, 212); */
 }
 
-.section1_box_text {
+.s1_box_text {
     width: 100%;
     max-width: 1000px;
-    min-width: 370px;
-    border-right: 1px solid white;
+    min-width: 300px;
+    border-right: 1px solid rgb(243, 6, 6);
     animation-name: efeitoDigitacao;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -212,17 +212,17 @@ header {
     /* border: 1px solid red; */
 }
 
-.section1_box_text h1 {
+.s1_box_text h1 {
     font-style: normal;
-    font-size: 3em;
+    font-size: 3.5em;
     color: white;
     padding-bottom: 20px;
 
     /* border: 1px solid blue; */
 }
 
-.section1_box_text p {
-    font-size: 1em;
+.s1_box_text p {
+    font-size: 1.5em;
     font-weight: 500;
     font-style: normal;
     padding-bottom: 20px;
@@ -232,7 +232,7 @@ header {
     /* border: 1px solid red; */
 }
 
-.section1_box_text p:hover {
+.s1_box_text p:hover {
     color: #3c0280;
 }
 
@@ -240,13 +240,24 @@ header {
 
 
 /* SECTION 2 */
-.section2 {
+.s2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #000000;
 
     /* border: 2px solid rgb(255, 0, 221); */
 }
 
-.section2_box {
+.s2_box {
+    width: 100%;
+    max-width: 950px;
+    height: 100%;
+
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.s2_box {
     display: grid;
     grid-template-areas: "a1 a1 a2 a2 a2 a2"
         "a1 a1 a2 a2 a2 a2"
@@ -258,10 +269,9 @@ header {
 h2 {
     padding-top: 20px;
     font-size: 2.5em;
-    color: white;
-    text-align: center;
+    color: white;    
 
-    /* border: 1px solid rgb(255, 102, 0); */
+    border: 2px solid rgb(38, 0, 255);
 }
 
 .item1 {
@@ -270,11 +280,11 @@ h2 {
 
 .item1 img {
     width: 100%;
-    max-width: 210px;
+    max-width: 280px;
     min-width: 50px;
     border-radius: 5%;
 
-    /* border: 1px solid blue; */
+    border: 2px solid blue;
 }
 
 .item2 {
@@ -286,7 +296,7 @@ h2 {
     font-size: 1em;
     color: white;
 
-    /* border: 1px solid red; */
+    border: 2px solid rgb(252, 174, 6);
 }
 
 .item2 h3 {
@@ -294,13 +304,13 @@ h2 {
     color: white;
     padding-bottom: 40px;
 
-    /* border: 1px solid greenyellow; */
+    border: 2px solid rgb(47, 248, 255);
 }
 
 .item2 p {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 
-    /* border: 1px solid rgb(115, 255, 0); */
+    border: 2px solid rgb(115, 255, 0);
 }
 
 .item3 {
@@ -308,7 +318,7 @@ h2 {
     display: flex;
     justify-content: space-between;
 
-    /* border: 1px solid rgb(47, 123, 255); */
+    border: 2px solid rgb(47, 123, 255);
 }
 
 .item3 img {
@@ -316,15 +326,7 @@ h2 {
     height: 100%;
     max-height: 40px;
 
-    /* border: 1px solid greenyellow; */
-}
-
-.section2_box {
-    width: 100%;
-    max-width: 950px;
-    height: 99%;
-
-    /* border: 1px solid rgb(255, 0, 0); */
+    border: 2px solid greenyellow;
 }
 
 /* SECTION 3 */
@@ -333,15 +335,67 @@ h2 {
     background-color: #131313;
 }
 
+
+
+
+
+
 /* SECTION 4 */
-.section4 {
+.s4 {
     color: white;
     background-color: #000000;
 
-    /* border: 1px solid rgb(255, 0, 221); */
+    /* border: 2px solid rgb(255, 0, 221); */
+}
+
+h4{
+    padding-top: 20px;
+    font-size: 2.5em;
+    color: white;    
+
+    border: 2px solid red;
+}
+
+.s4_box{
+    width: 100%;
+    max-width: 950px;
+    height: 100%;
+    
+    border: 2px solid blue;
+}
+
+.formulario {
+    width: 450px;
+    height: 100%;
+    padding: 80px;
+    background-color: #110a24;
+    
+    /* border: 2px solid red; */
+}
+
+h5{
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.formulario label {
+    width: 100%;
+    
+}
+
+.formulario input {
+    width: 100%;
+    padding: 5px;
+    
 }
 
 
+/* FOOTER */
+
+footer {
+    height: 30vh;
+    background-color: #131313;
+}
 
 
 
@@ -387,37 +441,37 @@ h2 {
     .top_navigator {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding: 0px;
-        width: 100%;
+        justify-content: space-around;
+        padding-left: 5px;
+        padding-right: 5px;
+        /* width: 100%; */
         height: 100%;
-    
-        /* border: 1px solid rgb(8, 0, 255); */
+
+        /* border: 2px solid rgb(8, 0, 255); */
     }
 
     /* Redimencionar o Box Logo */
     .box_logo {
-        width: 280px;
-    
-        /* border: 1px solid rgb(0, 255, 0); */
+
+        /* border: 2px solid rgb(0, 255, 0); */
     }
 
     /* Reduzir Logo */
     /* Texto logo TC */
     .logo p {
         font-size: 1.7em;
-        padding: 12px;
-       
+        padding: 10px;
+
         /* border: 1px solid greenyellow */
     }
 
+
     /* Ocultar textos da logo */
     /* Nome Tiago Costa */
-    
 
     .logo_text {
         font-size: 1.1em;
-        /* display: none; */
+        display: none;
 
         /* border: 1px solid red; */
     }
@@ -439,26 +493,54 @@ h2 {
 
     /* Exibir Burger Menu */
     .burger_menu {
-        width: 70px;    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 50px;
         display: block;
 
         /* border: 1px solid greenyellow; */
     }
 
     .burger_menu button {
-        text-align: center;
-        font-size: 2.4em;
-        color: white;
-        border: none;
-        background-color: transparent;
-        position: absolute;
         display: block;
+        font-size: 3em;
+        height: 100%;
 
-        /* border: 1px solid red; */
+        /* border: 2px solid red; */
     }
 
 
+
+
+
     /* SECTION 1 */
+    .s1{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: space-evenly;
+    }
+
+    .s1_box_text h1 {
+        font-size: 3em;
+        padding-bottom: 50px;
+
+        border: 1px solid blue;
+    }
+
+    .s1_box_text p {
+        font-size: 1.2em;
+        font-weight: 500;
+        font-style: normal;
+        padding-bottom: 20px;
+        /* color: #3796b3; */
+        color: #7500fa;
+
+        border: 1px solid red;
+    }
+
+
     /* SECTION 2 */
     /* SECTION 3 */
 }
