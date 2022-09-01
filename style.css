@@ -10,6 +10,7 @@ html {
     font-size: 15px;
     font-style: normal;
     font-weight: normal;
+    color: white;
 }
 
 body {
@@ -67,7 +68,7 @@ header {
 
 .box_logo p {
     font-family: 'Roboto', sans-serif;
-    color: white;
+
     /* flex-wrap: wrap; */
 
     /* border: 1px solid rgb(255, 0, 0); */
@@ -187,6 +188,12 @@ header {
     /* border: 4px solid green; */
 }
 
+h2, h3, h4 {
+    font-size: 1.5em;
+    padding: 10px;
+
+    border: 2px solid greenyellow;
+}
 
 /* SECTION 1 */
 
@@ -215,7 +222,6 @@ header {
 .s1_box_text h1 {
     font-style: normal;
     font-size: 3.5em;
-    color: white;
     padding-bottom: 20px;
 
     /* border: 1px solid blue; */
@@ -266,14 +272,6 @@ header {
     justify-content: center;
 }
 
-h2 {
-    padding-top: 20px;
-    font-size: 2.5em;
-    color: white;    
-
-    border: 2px solid rgb(38, 0, 255);
-}
-
 .item1 {
     grid-area: a1;
 }
@@ -299,12 +297,12 @@ h2 {
     border: 2px solid rgb(252, 174, 6);
 }
 
-.item2 h3 {
+#titulo_nome {
     font-size: 1.7em;
-    color: white;
     padding-bottom: 40px;
 
     border: 2px solid rgb(47, 248, 255);
+
 }
 
 .item2 p {
@@ -331,7 +329,6 @@ h2 {
 
 /* SECTION 3 */
 .section3 {
-    color: white;
     background-color: #131313;
 }
 
@@ -342,52 +339,75 @@ h2 {
 
 /* SECTION 4 */
 .s4 {
-    color: white;
     background-color: #000000;
 
-    /* border: 2px solid rgb(255, 0, 221); */
+    border: 2px solid rgb(255, 0, 221);
 }
 
-h4{
-    padding-top: 20px;
-    font-size: 2.5em;
-    color: white;    
+
+.s4_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+
+    border: 2px solid blue;
+}
+
+.contatos {
+    width: 450px;
+    border: 2px solid red;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    padding: 50px;
+
+    border: 2px solid rgb(115, 255, 0);
+}
+
+#titulo_form{
+    text-align: center;
+    padding: 10px;
 
     border: 2px solid red;
 }
 
-.s4_box{
-    width: 100%;
-    max-width: 950px;
-    height: 100%;
-    
-    border: 2px solid blue;
-}
-
-.formulario {
-    width: 450px;
-    height: 100%;
-    padding: 80px;
-    background-color: #110a24;
-    
-    /* border: 2px solid red; */
-}
-
-h5{
-    font-size: 1.2em;
-    text-align: center;
-}
-
 .formulario label {
     width: 100%;
-    
+    font-size: .8em;
+
 }
 
 .formulario input {
     width: 100%;
     padding: 5px;
+    border: 0px;
     
+    /* background-color: #000000; */
+  
+    color: white;
 }
+
+input[type="submit"]{
+    font-size: 1.2em;
+    padding: 7px;
+    background-image: linear-gradient(to right, rgb(199, 15, 255), rgb(68, 0, 255));
+}
+
+.formulario textarea {
+    width: 100%;
+    max-width: 300px;
+    min-width: 100%;
+    max-height: 300px;
+    min-height: 300px;
+
+}
+
 
 
 /* FOOTER */
@@ -515,7 +535,7 @@ footer {
 
 
     /* SECTION 1 */
-    .s1{
+    .s1 {
         display: flex;
         flex-direction: column;
         /* align-items: center; */
