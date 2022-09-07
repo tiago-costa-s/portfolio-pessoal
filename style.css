@@ -77,7 +77,7 @@ header {
 /* Texto logo TC */
 .logo p {
     font-size: 2em;
-    padding: 20px;
+    padding: 15px;
     border-radius: 15%;
     background-image: linear-gradient(to right, rgb(199, 15, 255), rgb(68, 0, 255));
 
@@ -87,6 +87,7 @@ header {
 /* Nome Tiago Costa */
 .logo_text {
     font-size: 1.4em;
+    padding: 10px;
 }
 
 /* Texto Desenvolvimento Web */
@@ -188,11 +189,13 @@ header {
     /* border: 4px solid green; */
 }
 
-h2, h3, h4 {
-    font-size: 1.5em;
+h2,
+h3,
+h4 {
+    font-size: 2.2em;
     padding: 10px;
 
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
 }
 
 /* SECTION 1 */
@@ -260,7 +263,7 @@ h2, h3, h4 {
     max-width: 950px;
     height: 100%;
 
-    border: 2px solid rgb(255, 0, 0);
+    /* border: 2px solid rgb(255, 0, 0); */
 }
 
 .s2_box {
@@ -282,7 +285,7 @@ h2, h3, h4 {
     min-width: 50px;
     border-radius: 5%;
 
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .item2 {
@@ -294,21 +297,20 @@ h2, h3, h4 {
     font-size: 1em;
     color: white;
 
-    border: 2px solid rgb(252, 174, 6);
+    /* border: 2px solid rgb(252, 174, 6); */
 }
 
 #titulo_nome {
     font-size: 1.7em;
     padding-bottom: 40px;
 
-    border: 2px solid rgb(47, 248, 255);
-
+    /* border: 2px solid rgb(47, 248, 255); */
 }
 
 .item2 p {
     padding-bottom: 15px;
 
-    border: 2px solid rgb(115, 255, 0);
+    /* border: 2px solid rgb(115, 255, 0); */
 }
 
 .item3 {
@@ -316,7 +318,7 @@ h2, h3, h4 {
     display: flex;
     justify-content: space-between;
 
-    border: 2px solid rgb(47, 123, 255);
+    /* border: 2px solid rgb(47, 123, 255); */
 }
 
 .item3 img {
@@ -324,7 +326,7 @@ h2, h3, h4 {
     height: 100%;
     max-height: 40px;
 
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
 }
 
 /* SECTION 3 */
@@ -332,16 +334,66 @@ h2, h3, h4 {
     background-color: #131313;
 }
 
+.s3_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    min-width: 375px;
+    height: 100%;
+
+    /* border: 2px solid red; */
+}
+
+.portifolio_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 85vh;
+
+    /* border: 2px solid blue; */
+}
+
+.port {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 80vh;
+    font-size: 2em;
+    color: white;
 
 
+    /* border: 2px solid rgb(255, 38, 0); */
+}
 
+.port a {
+    color: rgba(255, 38, 0, 0.527);
+    font-style: normal;
+}
 
+.pers {
+    background-image: url("/assets/images/notebook-2-G.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.prof {
+    background-image: url("/assets/images/freelancer.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 /* SECTION 4 */
 .s4 {
     background-color: #000000;
 
-    border: 2px solid rgb(255, 0, 221);
+    /* border: 2px solid rgb(255, 0, 221); */
 }
 
 
@@ -349,16 +401,45 @@ h2, h3, h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    max-width: 1000px;
-    height: 100%;
-
-    border: 2px solid blue;
+  
+    /* border: 2px solid blue; */
 }
 
-.contatos {
-    width: 450px;
-    border: 2px solid red;
+.contatos_box {
+    width: auto;
+
+    /* border: 3px solid red; */
+}
+
+.contato {
+    padding: 25px;
+    padding-left: 0;
+
+    /* border: 1px solid greenyellow; */
+}
+
+.contato a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+
+    /* border: 2px solid blue; */
+}
+
+.contato img {
+    width: 50px;
+
+    /* border: 1px solid red; */
+}
+
+.contato p {
+
+    /* border: 1px solid green; */
 }
 
 .formulario {
@@ -367,19 +448,27 @@ h2, h3, h4 {
     height: 100%;
     padding: 50px;
 
-    border: 2px solid rgb(115, 255, 0);
+    /* border: 2px solid rgb(115, 255, 0); */
 }
 
-#titulo_form{
+#titulo_form {
+    font-size: 1.2em;
     text-align: center;
-    padding: 10px;
+    padding: 25px;
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .formulario label {
     width: 100%;
-    font-size: .8em;
+    font-size: .9em;
+}
+
+input {
+    margin-bottom: 8px;
+    color: white;
+
+    background-color: #000000;
 
 }
 
@@ -387,17 +476,17 @@ h2, h3, h4 {
     width: 100%;
     padding: 5px;
     border: 0px;
-    
+    border-bottom: 1px solid white;
+
     /* background-color: #000000; */
-  
-    color: white;
 }
 
-input[type="submit"]{
-    font-size: 1.2em;
-    padding: 7px;
-    background-image: linear-gradient(to right, rgb(199, 15, 255), rgb(68, 0, 255));
+.formulario p {
+    font-size: 1.1em;
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
+
 
 .formulario textarea {
     width: 100%;
@@ -405,15 +494,40 @@ input[type="submit"]{
     min-width: 100%;
     max-height: 300px;
     min-height: 300px;
-
+    background-color: #000000;
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 1em;
+    color: white;
 }
+
+.textAlerta {
+    width: 100%;
+    height: 35px;
+
+    /* border: 2px solid red; */
+}
+
+input[type="submit"] {
+    color: white;
+    font-size: 1.2em;
+    padding: 15px;
+    border: 0;
+    background-image: linear-gradient(to right, rgb(199, 15, 255), rgb(68, 0, 255));
+}
+
 
 
 
 /* FOOTER */
 
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 30vh;
+    font-size: 1.2em;
+    font-weight: bold;
     background-color: #131313;
 }
 
@@ -531,7 +645,15 @@ footer {
     }
 
 
+    /* SECTIONS */
+    h2,
+    h3,
+    h4 {
+        font-size: 1.5em;
+        padding: 5px;
 
+        /* border: 2px solid greenyellow; */
+    }
 
 
     /* SECTION 1 */
@@ -546,7 +668,7 @@ footer {
         font-size: 3em;
         padding-bottom: 50px;
 
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }
 
     .s1_box_text p {
@@ -557,12 +679,137 @@ footer {
         /* color: #3796b3; */
         color: #7500fa;
 
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 
 
     /* SECTION 2 */
     /* SECTION 3 */
+    /* SECTION 4 */
+    .s4 {
+        background-color: #000000;
+
+        /* border: 2px solid rgb(255, 0, 221); */
+    }
+
+
+    .s4_box {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+       
+        /* border: 2px solid blue; */
+    }
+
+    .contatos_box {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+
+        /* border: 1px solid red; */
+    }
+
+    .contato {
+        padding: 0px;  
+
+        /* border: 1px solid greenyellow; */
+    }
+
+    .contato a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        font-style: normal;        
+        text-align: center;
+
+        /* border: 2px solid blue; */
+    }
+
+    .contato img {
+        width: 35px;
+
+        /* border: 1px solid red; */
+    }
+
+    .contato p {
+        display: none;
+        /* border: 1px solid green; */
+    }
+
+    .formulario {
+        width: 100%;
+        max-width: 450px;
+        height: 100%;
+        padding: 10px;
+
+        /* border: 2px solid rgb(115, 255, 0); */
+    }
+
+    #titulo_form {
+        font-size: 1em;
+        text-align: center;
+        padding: 10px;
+
+        /* border: 2px solid red; */
+    }
+
+    .formulario label {
+        width: 100%;
+        font-size: .8em;
+    }
+
+    input {
+        margin-bottom: 8px;
+
+    }
+
+    .formulario input {
+        width: 100%;
+        padding: 2px;
+        border: 0px;
+        border-bottom: 1px solid white;
+
+        /* background-color: #000000; */
+    }
+
+    .formulario p {
+        font-size: 1.1em;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    .formulario textarea {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 300px;
+        min-height: 300px;
+        background-color: #000000;
+        border: 1px solid white;
+        padding: 5px;
+    }
+
+    .textAlerta {
+        width: 100%;
+        height: 10px;
+
+        /* border: 2px solid red; */
+    }
+
+    input[type="submit"] {
+        color: white;
+        font-size: 1.2em;
+        padding: 15px;
+        border: 0;
+        background-image: linear-gradient(to right, rgb(199, 15, 255), rgb(68, 0, 255));
+    }
+
+
 }
 
 

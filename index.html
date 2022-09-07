@@ -77,7 +77,7 @@
                     <img src="https://i.postimg.cc/YqZtbyrj/photo.jpg" alt="">
                 </div>
 
-                <div class="item2">                    
+                <div class="item2">
                     <p id="titulo_nome">Tiago Costa</p>
                     <div>
                         <p>Estudante na área da Tecnologia da Informação.</p>
@@ -131,6 +131,12 @@
         <section class="sessao section3">
 
             <h3>Portifólio</h3>
+            <div class="s3_box">
+                <div class="portifolio_box">
+                    <div class="port pers"><a href="#">Perssoal</a></div>
+                    <div class="port prof"><a href="#">Profissional</a></div>
+                </div>
+            </div>
         </section>
 
         <section class="sessao s4">
@@ -139,18 +145,32 @@
 
             <div class="s4_box">
 
-                <div class="contatos">
-                    <div>
+                <div class="contatos_box">
+                    <div class="contato tel">
                         <a href="">
-                            <img src="" alt="">
-                            <p>Tel</p>
-                            <p>31 99193-2470</p>
+                            <img src="https://i.postimg.cc/c4ZXZ6bG/phone-icon-orange.png" alt="logo telefone">
+                            <p>Telefone</p>
+                            <p></p>
+                        </a>
+                    </div>
+                    <div class="contato email">
+                        <a href="">
+                            <img src="https://i.postimg.cc/x1vjWxhP/email.png" alt="logo e-mail">
+                            <p>e-mail</p>
+                            <p></p>
+                        </a>
+                    </div>
+                    <div class="contato whats">
+                        <a href="">
+                            <img src="https://i.postimg.cc/3w98wyK4/whatsapp.png" alt="logo whatsapp">
+                            <p>Whatsapp</p>
+                            <p></p>
                         </a>
                     </div>
 
                 </div>
 
-                <form action="">
+                <form action="" method="post">
 
                     <div class="formulario">
                         <div>
@@ -158,29 +178,30 @@
                         </div>
 
                         <label for="">Nome</label>
-                        <input type="text" placeholder="">
+                        <input type="text" placeholder="" id="nome" required>
 
                         <label for="">Telefone</label>
-                        <input type="tel" placeholder="">
+                        <input type="tel" placeholder="" id="telefone" required>
 
                         <label for="">E-mail</label>
-                        <input type="" placeholder="">
+                        <input type="" placeholder="" required>
 
-                        <label for="">Digite a sua mensagem:</label>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Descrição..." maxlength=""></textarea>
+                        <p>Digite a sua mensagem:</p>
+                        <textarea name="" cols="30" rows="10" placeholder="Descrição..." maxlength="254"
+                            id="descricao"></textarea>
 
                         <div class="textAlerta">
                             <p></p>
                         </div>
 
-                        <input type="submit">
+                        <input type="submit" id="btn">
                     </div>
                 </form>
             </div>
         </section>
 
         <footer>
-
+            <p>&#169; Copyright</p>
         </footer>
     </main>
 
