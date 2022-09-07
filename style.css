@@ -363,7 +363,7 @@ h4 {
     justify-content: center;
     width: 49%;
     height: 80vh;
-    font-size: 2em;
+    font-size: 1em;
     color: white;
 
 
@@ -371,7 +371,7 @@ h4 {
 }
 
 .port a {
-    color: rgba(255, 38, 0, 0.527);
+    color: white;
     font-style: normal;
 }
 
