@@ -179,6 +179,7 @@ header {
 
 /* SESSÃO */
 .sessao {
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,20 +187,23 @@ header {
     width: 100%;
     height: 100vh;
 
-    /* border: 4px solid green; */
+    /* border: 2px solid green; */
 }
 
 h2,
 h3,
 h4 {
+    width: 100%;
+    margin: auto;
+    position: static;
     font-size: 2.2em;
-    padding: 10px;
+    text-align: center;
+    padding: 30px;
 
-    /* border: 2px solid greenyellow; */
+    /* border: 2px solid red; */
 }
 
 /* SECTION 1 */
-
 .s1 {
     background-image: url("https://i.postimg.cc/tJVnMnxx/notebook-M.jpg");
     background-position: center;
@@ -246,8 +250,6 @@ h4 {
 }
 
 
-
-
 /* SECTION 2 */
 .s2 {
     display: flex;
@@ -255,15 +257,7 @@ h4 {
     justify-content: space-between;
     background-color: #000000;
 
-    /* border: 2px solid rgb(255, 0, 221); */
-}
-
-.s2_box {
-    width: 100%;
-    max-width: 950px;
-    height: 100%;
-
-    /* border: 2px solid rgb(255, 0, 0); */
+    /* border: 2px solid blue; */
 }
 
 .s2_box {
@@ -272,7 +266,11 @@ h4 {
         "a1 a1 a2 a2 a2 a2"
         "a3 a3 a3 a3 a3 a3";
     align-items: center;
-    justify-content: center;
+    width: 100%;
+    max-width: 950px;
+    height: 99%;
+
+    /* border: 2px solid rgb(255, 0, 0); */
 }
 
 .item1 {
@@ -283,7 +281,7 @@ h4 {
     width: 100%;
     max-width: 280px;
     min-width: 50px;
-    border-radius: 5%;
+    border-radius: 25% 0% 25% 0%;
 
     /* border: 2px solid blue; */
 }
@@ -292,12 +290,13 @@ h4 {
     grid-area: a2;
     width: 100%;
     max-width: 700px;
+    /* height: 540px; */
     /* min-width: 500px; */
     padding: 20px;
     font-size: 1em;
     color: white;
 
-    /* border: 2px solid rgb(252, 174, 6); */
+    /* border: 2px solid blue; */
 }
 
 #titulo_nome {
@@ -313,18 +312,19 @@ h4 {
     /* border: 2px solid rgb(115, 255, 0); */
 }
 
+
 .item3 {
     grid-area: a3;
     display: flex;
     justify-content: space-between;
 
-    /* border: 2px solid rgb(47, 123, 255); */
+    border: 2px solid rgb(47, 123, 255);
 }
 
 .item3 img {
     width: 100%;
     height: 100%;
-    max-height: 40px;
+    max-height: 35px;
 
     /* border: 2px solid greenyellow; */
 }
@@ -363,7 +363,7 @@ h4 {
     justify-content: center;
     width: 49%;
     height: 80vh;
-    font-size: 1em;
+    font-size: 2.5em;
     color: white;
 
 
@@ -396,12 +396,14 @@ h4 {
     /* border: 2px solid rgb(255, 0, 221); */
 }
 
-
 .s4_box {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+
     /* border: 2px solid blue; */
 }
 
@@ -448,7 +450,7 @@ h4 {
     height: 100%;
     padding: 50px;
 
-    /* border: 2px solid rgb(115, 255, 0); */
+    /* border: 2px solid red; */
 }
 
 #titulo_form {
@@ -478,6 +480,7 @@ input {
     border: 0px;
     border-bottom: 1px solid white;
 
+
     /* background-color: #000000; */
 }
 
@@ -493,7 +496,7 @@ input {
     max-width: 300px;
     min-width: 100%;
     max-height: 300px;
-    min-height: 300px;
+    min-height: 250px;
     background-color: #000000;
     border: 1px solid white;
     padding: 10px;
@@ -518,9 +521,7 @@ input[type="submit"] {
 
 
 
-
 /* FOOTER */
-
 footer {
     display: flex;
     align-items: center;
@@ -528,9 +529,9 @@ footer {
     height: 30vh;
     font-size: 1.2em;
     font-weight: bold;
-    background-color: #131313;
+    color: white;
+    background-color: #080808;
 }
-
 
 
 /* Animações */
@@ -553,8 +554,8 @@ footer {
 
 /* Smartphone Iphone 375 x 667 */
 @media screen and (max-width: 414px) {
+    
     /* HEADER */
-
     header {
         position: fixed;
         display: flex;
@@ -684,7 +685,10 @@ footer {
 
 
     /* SECTION 2 */
-
+    .item1 img {
+        display: none;
+     
+    }
 
     /* SECTION 3 */
 
@@ -696,17 +700,17 @@ footer {
         max-width: 370px;
         /* min-width: 370px; */
         height: 100vh;
-    
+
         /* border: 2px solid red; */
     }
-    
+
     .portifolio_box {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;        
+        justify-content: space-between;
         height: 90vh;
-    
+
         /* border: 2px solid blue; */
     }
 
@@ -718,8 +722,7 @@ footer {
         height: 49%;
         font-size: 2em;
         color: white;
-    
-    
+
         /* border: 2px solid rgb(255, 38, 0); */
     }
 
@@ -730,13 +733,12 @@ footer {
         /* border: 2px solid rgb(255, 0, 221); */
     }
 
-
     .s4_box {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-around;
-       
+
         /* border: 2px solid blue; */
     }
 
@@ -749,7 +751,7 @@ footer {
     }
 
     .contato {
-        padding: 0px;  
+        padding: 0px;
 
         /* border: 1px solid greenyellow; */
     }
@@ -760,7 +762,7 @@ footer {
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        font-style: normal;        
+        font-style: normal;
         text-align: center;
 
         /* border: 2px solid blue; */
@@ -801,7 +803,7 @@ footer {
 
     input {
         margin-bottom: 8px;
-
+        outline: 0;
     }
 
     .formulario input {
@@ -820,16 +822,16 @@ footer {
         padding-bottom: 10px;
     }
 
-
     .formulario textarea {
         width: 100%;
         max-width: 100%;
         min-width: 100%;
         max-height: 300px;
-        min-height: 300px;
+        /* min-height: 240px; */
         background-color: #000000;
         border: 1px solid white;
         padding: 5px;
+        outline: 0;
     }
 
     .textAlerta {
@@ -842,15 +844,16 @@ footer {
     input[type="submit"] {
         color: white;
         font-size: 1.2em;
-        padding: 15px;
+        padding: 10px;
         border: 0;
         background-image: linear-gradient(to right, rgb(199, 15, 255), rgb(68, 0, 255));
     }
 
-
+    footer{
+        height: 20vh;
+        font-size: .8em;
+    }
 }
-
-
 
 
 /* Tablet Ipad 768 x 1024 */

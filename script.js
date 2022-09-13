@@ -14,6 +14,7 @@ var queryHeader = document.querySelector('#top_header');
 window.addEventListener("scroll", function () {
     var header = document.querySelector("header");
     header.classList.toggle("top_header", window.scrollY > 0);
+    
 });
 
 
@@ -37,16 +38,15 @@ enviar.addEventListener("click", function (e) {
     console.log(nomeValor, telefoneValor, descricaoValor);
     console.log(novoContato);
 
-
 });
 
 
-function alertaLogin() { 
+function alertaLogin() {
 
     try {
         console.log("");
     } catch (error) {
-        
+
     }
 }
 
