@@ -319,7 +319,7 @@ h4 {
     align-items: center;
     justify-content: space-between;
 
-    border: 2px solid rgb(47, 123, 255);
+    /* border: 2px solid rgb(47, 123, 255); */
 }
 
 .item3 img {
