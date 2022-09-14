@@ -316,9 +316,10 @@ h4 {
 .item3 {
     grid-area: a3;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
-    /* border: 2px solid rgb(47, 123, 255); */
+    border: 2px solid rgb(47, 123, 255);
 }
 
 .item3 img {
@@ -627,7 +628,7 @@ footer {
     h2,
     h3,
     h4 {
-        font-size: 2em;
+        font-size: 1.5em;
         padding: 5px;
 
         /* border: 2px solid greenyellow; */
