@@ -476,10 +476,11 @@ input {
 
 .formulario input {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     border: 0px;
     border-bottom: 1px solid white;
-
+    outline: 0;
+    font-size: 1.2em;
 
     /* background-color: #000000; */
 }
@@ -554,7 +555,7 @@ footer {
 
 /* Smartphone Iphone 375 x 667 */
 @media screen and (max-width: 414px) {
-    
+
     /* HEADER */
     header {
         position: fixed;
@@ -676,9 +677,9 @@ footer {
     }
 
     .s1_box_text p {
-        font-size: 1.3em;       
+        font-size: 1.3em;
         font-style: normal;
-        padding-bottom: 25px;     
+        padding-bottom: 25px;
 
         /* border: 1px solid red; */
     }
@@ -687,7 +688,7 @@ footer {
     /* SECTION 2 */
     .item1 img {
         display: none;
-     
+
     }
 
 
@@ -696,7 +697,7 @@ footer {
     /* SECTION 3 */
 
 
-    
+
 
     .s3_box {
         display: flex;
@@ -724,16 +725,13 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 99%;
+        width: 100vw;
         height: 49%;
         font-size: 2em;
         color: white;
 
         /* border: 2px solid rgb(255, 38, 0); */
     }
-
-
-
 
 
     /* SECTION 4 */
@@ -821,7 +819,7 @@ footer {
 
     .formulario input {
         width: 100%;
-        padding: 2px;
+        padding: 10px;
         border: 0px;
         border-bottom: 1px solid white;
 
@@ -862,7 +860,7 @@ footer {
         background-image: linear-gradient(to right, rgb(199, 15, 255), rgb(68, 0, 255));
     }
 
-    footer{
+    footer {
         height: 20vh;
         font-size: .8em;
     }
