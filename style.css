@@ -563,11 +563,8 @@ footer {
         background-color: black;
     }
 
-    /* .top_header {
-        display: none;
-    } */
-
-    .top_navigator {       
+    .top_navigator {   
+        flex-direction: row-reverse;    
         padding-left: 5px;
         padding-right: 5px;    
         height: 100%;
@@ -582,7 +579,7 @@ footer {
         font-size: 1.5em;
         padding: 10px;
 
-        border: 1px solid greenyellow
+        /* border: 1px solid greenyellow */
     }
 
 
@@ -596,7 +593,17 @@ footer {
 
     /* Ocultar NavBar */
     .top_menu ul {
+        /* float: left; */
         display: none;
+        flex-direction: column;
+        width: 90vw;
+        height: 350px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.932);
+
+        font-size: 1.3em;
+        
+        /* border: 2px solid red; */
     }
 
     /* Ocultar menu Github e Linkedin*/
