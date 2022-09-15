@@ -554,7 +554,7 @@ footer {
 /*Media Queries*/
 
 /* Smartphone Iphone 375 x 667 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     /* HEADER */
     header {       
