@@ -70,7 +70,6 @@ header {
     font-family: 'Roboto', sans-serif;
 
     /* flex-wrap: wrap; */
-
     /* border: 1px solid rgb(255, 0, 0); */
 }
 
@@ -240,7 +239,7 @@ h4 {
     font-style: normal;
     padding-bottom: 20px;
     /* color: #3796b3; */
-    color: #7500fa;
+    color: #bb0eff;
 
     /* border: 1px solid red; */
 }
@@ -555,7 +554,7 @@ footer {
 /*Media Queries*/
 
 /* Smartphone Iphone 375 x 667 */
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 768px) {
 
     /* HEADER */
     header {       
