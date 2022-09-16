@@ -104,7 +104,7 @@ header {
     transition-duration: 600ms;
     text-decoration: none;
     padding: 1em;
-    border: 1px solid rgb(255, 0, 34);
+    /* border: 1px solid rgb(255, 0, 34); */
 }
 
 .icons_social_midia {
@@ -582,17 +582,22 @@ footer {
         width: 100%;
         top: 70px;
         right: 0px;
-        height: calc(50vh - 70px);
+        height: calc(100vh - 70px);
         background-color: rgba(0, 0, 0, 0.945);
         z-index: 1000;
-        padding: 20px;
-        border: 2px solid blue;
+       
+
+        
+        /* border: 2px solid blue; */
     }
 
     #menu a {
-        padding: 1rem;
+        width: 1000px;
+        font-size: 1.5em;
+        padding: 1rem 0;
+        margin: 0 1rem;
 
-        /* border: 2px solid red; */
+        border: 2px solid red;
     }
 
     
