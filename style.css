@@ -582,7 +582,7 @@ footer {
         width: 100%;
         top: 70px;
         right: 0px;
-        height: calc(100vh - 70px);
+        height: calc(50vh - 70px);
         background-color: rgba(0, 0, 0, 0.945);
         z-index: 1000;
        
