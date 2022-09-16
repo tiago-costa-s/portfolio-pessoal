@@ -17,26 +17,23 @@ body {
     background-color: gray;
 }
 
-.container {
-    width: 100%;
-    /* border: 1px solid greenyellow; */
-}
-
 header {
     position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
     height: 110px;
-    transition-duration: 600ms;
+    /* transition-duration: 600ms; */
 
-    /* border: 4px solid rgb(255, 174, 0); */
+    /* border: 2px solid rgb(255, 174, 0); */
 }
 
-.top_header {
+.header {
     background-color: rgb(0, 0, 0);
+
+
 }
 
 /* Alterar o fundo ao passar o mouse */
@@ -45,15 +42,6 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.103);
 } */
 
-.top_navigator {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 40px;
-
-    /* border: 3px solid rgb(0, 47, 255); */
-}
 
 .box_logo {
     display: flex;
@@ -63,7 +51,8 @@ header {
     flex-wrap: wrap;
     width: auto;
 
-    /* border: 2px solid rgb(0, 255, 0); */
+    /* display: none; */
+    /* border: 2px solid blue; */
 }
 
 .box_logo p {
@@ -94,47 +83,41 @@ header {
     font-size: .5em;
 }
 
-.top_menu {
-    width: 100%;
-    max-width: 700px;
-    height: 100%;
 
-    /* border: 2px solid rgb(255, 11, 255); */
-}
-
-.top_menu ul {
+#menu {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    gap: 2em;
     height: 100%;
     list-style: none;
 
     /* border: 2px solid rgb(21, 255, 0); */
 }
 
-.top_menu a {
+#menu a {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     font-weight: 500;
     color: white;
     transition-duration: 600ms;
     text-decoration: none;
-
-    /* border: 1px solid rgb(255, 0, 34); */
+    padding: 1em;
+    border: 1px solid rgb(255, 0, 34);
 }
 
-.top_icons_social_midia {
+.icons_social_midia {
     display: flex;
     align-items: center;
     justify-items: center;
     width: 100px;
-    height: 100%;
+    /* height: 100%; */
 
-    /* border: 1px solid rgb(0, 255, 242); */
+    /* border: 2px solid blue; */
 }
 
-.top_icons_social_midia ul {
+.icons_social_midia ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -145,33 +128,39 @@ header {
     list-style: none;
 
     /* border: 2px solid rgb(3, 255, 117); */
-
 }
 
-.top_icons_social_midia img {
+.icons_social_midia img {
     width: 20px;
 
     /* border: 1px solid red; */
 }
 
-.top_menu a:hover {
+#nav a:hover {
     color: #5201af;
 }
 
-.burger_menu {
-    height: 100%;
+#burger_menu {
     display: none;
+}
 
-    /* border: 1px solid greenyellow; */
+.burger_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+
+    /* border: 2px solid red; */
 }
 
 .burger_menu button {
-    font-size: 5em;
+    font-size: 2.8em;
     color: white;
     border: none;
     background-color: transparent;
     position: absolute;
-    display: none;
+    /* display: none; */
 
     /* border: 1px solid red; */
 }
@@ -429,6 +418,7 @@ h4 {
     font-style: italic;
     color: white;
     text-align: center;
+    text-decoration: none;
 
     /* border: 2px solid blue; */
 }
@@ -554,24 +544,20 @@ footer {
 /*Media Queries*/
 
 /* Smartphone Iphone 375 x 667 */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
 
     /* HEADER */
-    header {       
+    header {
         height: 70px;
         background-color: black;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0px 5px 0px 5px;
+
+        /* border: 2px solid blue; */
     }
 
-    .top_navigator {   
-        flex-direction: row-reverse;    
-        padding-left: 5px;
-        padding-right: 5px;    
-        height: 100%;
 
-        /* border: 2px solid rgb(8, 0, 255); */
-    }
-
-    
     /* Reduzir Logo */
     /* Texto logo TC */
     .logo p {
@@ -585,49 +571,52 @@ footer {
     /* Ocultar textos da logo */
     /* Nome Tiago Costa */
 
-    .logo_text {       
+    .logo_text {
         display: none;
     }
 
 
-    /* Ocultar NavBar */
-    .top_menu ul {
-        /* float: left; */
+    #menu {
         display: none;
-        flex-direction: column;
-        width: 90vw;
-        height: 350px;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        height: calc(50vh - 70px);
+        background-color: rgba(0, 0, 0, 0.945);
+        z-index: 1000;
         padding: 20px;
-        background-color: rgba(0, 0, 0, 0.932);
+        border: 2px solid blue;
+    }
 
-        font-size: 1.3em;
-        
+    #menu a {
+        padding: 1rem;
+
         /* border: 2px solid red; */
     }
 
+    
+    #nav.active #menu {
+        display: block;
+    }
+
+    #burger_menu {
+
+        display: block;
+    }
+
+
+
+    /* Ocultar#NavBar */
+
+
     /* Ocultar menu Github e Linkedin*/
-    .top_icons_social_midia {
+    .icons_social_midia {
         display: none;
     }
 
     /* Exibir Burger Menu */
-    .burger_menu {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 50px;
-        display: block;
 
-        /* border: 1px solid greenyellow; */
-    }
-
-    .burger_menu button {
-        display: block;
-        font-size: 3em;
-        height: 100%;
-
-        /* border: 2px solid red; */
-    }
 
 
     /* SECTIONS */
@@ -683,7 +672,7 @@ footer {
         width: 100%;
         height: 100%;
         max-height: 50px;
-    
+
         /* border: 2px solid greenyellow; */
     }
 
