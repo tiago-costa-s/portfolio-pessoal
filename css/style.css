@@ -102,7 +102,7 @@ header {
     /* border: 1px solid rgb(255, 0, 34); */
 }
 
-.icons_social_midia {
+.social-network {
     display: flex;
     align-items: center;
     justify-items: center;
@@ -112,7 +112,7 @@ header {
     /* border: 2px solid blue; */
 }
 
-.icons_social_midia ul {
+.social-network ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -125,7 +125,7 @@ header {
     /* border: 2px solid rgb(3, 255, 117); */
 }
 
-.icons_social_midia img {
+.social-network img {
     width: 20px;
 
     /* border: 1px solid red; */
@@ -161,14 +161,14 @@ header {
 }
 
 /* SESSÃO */
-.sessao {
+.section {
     /* position: relative; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 110px);
 
     /* border: 2px solid green; */
 }
@@ -178,16 +178,16 @@ h3,
 h4 {
     width: 100%;
     margin: auto;
-    position: static;
+
     font-size: 2.2em;
     text-align: center;
-    padding: 30px;
+    padding: 5px;
 
-    /* border: 2px solid red; */
+    border: 2px solid red;
 }
 
 /* SECTION 1 */
-.s1 {
+#s1 {
     background-image: url("https://i.postimg.cc/tJVnMnxx/notebook-M.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -262,7 +262,7 @@ h4 {
 
 .item1 img {
     width: 100%;
-    max-width: 280px;
+    max-width: 260px;
     min-width: 50px;
     border-radius: 25% 0% 25% 0%;
 
@@ -308,52 +308,46 @@ h4 {
 .item3 img {
     width: 100%;
     height: 100%;
-    max-height: 80px;
+    max-height: 70px;
 
     /* border: 2px solid greenyellow; */
 }
 
 /* SECTION 3 */
-.section3 {
+#s3 {
+    display: flex;
+    justify-content: space-between;
     background-color: #131313;
-
 }
 
-.s3_box {
+#s3_box {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     /* min-width: 370px; */
     height: 100%;
 
-    /* border: 2px solid red; */
+    /* border: 1px solid red; */
 }
-
-/* .portifolio_box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 85vh;
-
-    border: 2px solid blue;
-} */
 
 .port {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 49%;
-    height: 80vh;
+    width: 100%;
+    max-width: 590px;
+    height: 90%;   
     font-size: 2em;
 
-    /* border: 2px solid rgb(255, 38, 0); */
+    /* border: 1px solid blue; */
 }
 
 .port a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     color: white;
@@ -362,11 +356,19 @@ h4 {
     text-decoration: none;
 }
 
-.port a:hover {
-    color: rgb(11, 1, 1);
+.port a:hover {    
     font-weight: bold;
-    background-color: #ffffff3c;
+    background-color: #18181875;
 }
+
+.port p {
+    width: 100%;    
+    background-color: #18181836;
+
+    /* border: 2px solid red; */
+}
+
+
 
 #pers {
     background-image: url("https://i.postimg.cc/CLMxpy5B/freelancer.jpg");
@@ -615,7 +617,7 @@ footer {
     }
 
     /* Ocultar menu Github e Linkedin*/
-    .icons_social_midia {
+    .social-network {
         display: none;
     }
 
@@ -682,7 +684,7 @@ footer {
 
     /* SECTION 3 */
 
-    .s3_box {
+    #s3_box {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -703,24 +705,27 @@ footer {
 
         border: 2px solid blue;
     } */
-    .section3 {}
+    #s3 {
+        height: 200vh;
+    }
 
+    #s3_box {
+        height: 100%;
+    }
 
     .port {
         display: flex;
         justify-content: center;
         width: 100vw;
-        height: 45vh;
+        height: 100%;
         font-size: 1.5em;
         color: white;
 
-        border: 1px solid rgb(255, 38, 0);
+        /* border: 1px solid rgb(255, 38, 0); */
     }
 
 
     /* SECTION 4 */
-
-
 
     .s4 {
         background-color: #000000;
