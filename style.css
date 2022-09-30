@@ -369,7 +369,8 @@ h4 {
     height: 100%;
     color: white;
     font-style: normal;
-    text-align: center;   
+    text-align: center;  
+    text-decoration: none; 
 }
 
 .port a:hover {
@@ -378,7 +379,7 @@ h4 {
 }
 
 #pers {
-    background-image: url("/assets/images/notebook-2-G.jpg");
+    background-image: url("https://i.postimg.cc/CLMxpy5B/freelancer.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -386,7 +387,7 @@ h4 {
 }
 
 #prof {
-    background-image: url("/assets/images/freelancer.jpg");
+    background-image: url("https://i.postimg.cc/Y9vxt9Fp/notebook-2-G.jpg/freelancer.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
