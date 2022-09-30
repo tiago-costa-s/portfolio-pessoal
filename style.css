@@ -25,15 +25,12 @@ header {
     justify-content: space-around;
     width: 100%;
     height: 110px;
-    /* transition-duration: 600ms; */
 
     /* border: 2px solid rgb(255, 174, 0); */
 }
 
 .header {
     background-color: rgb(0, 0, 0);
-
-
 }
 
 /* Alterar o fundo ao passar o mouse */
@@ -41,7 +38,6 @@ header {
 /* header:hover {   
     border-bottom: 1px solid rgba(255, 255, 255, 0.103);
 } */
-
 
 .box_logo {
     display: flex;
@@ -82,7 +78,6 @@ header {
 .logo_text_p {
     font-size: .5em;
 }
-
 
 #menu {
     display: flex;
@@ -321,7 +316,7 @@ h4 {
 /* SECTION 3 */
 .section3 {
     background-color: #131313;
-    
+
 }
 
 .s3_box {
@@ -331,7 +326,7 @@ h4 {
     width: 100%;
     max-width: 1100px;
     /* min-width: 370px; */
-    height: 100%;   
+    height: 100%;
 
     /* border: 2px solid red; */
 }
@@ -363,8 +358,8 @@ h4 {
     height: 100%;
     color: white;
     font-style: normal;
-    text-align: center;  
-    text-decoration: none; 
+    text-align: center;
+    text-decoration: none;
 }
 
 .port a:hover {
@@ -523,8 +518,6 @@ input[type="submit"] {
     background-image: linear-gradient(to right, rgb(199, 15, 255), rgb(68, 0, 255));
 }
 
-
-
 /* FOOTER */
 footer {
     display: flex;
@@ -537,9 +530,7 @@ footer {
     background-color: #131313;
 }
 
-
 /* Animações */
-
 @keyframes efeitoDigitacao {
     from {
 
@@ -561,7 +552,7 @@ footer {
 
     /* HEADER */
     header {
-        height: 70px;
+        height: 55px;
         background-color: black;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -570,32 +561,28 @@ footer {
         /* border: 2px solid blue; */
     }
 
-
     /* Reduzir Logo */
     /* Texto logo TC */
     .logo p {
-        font-size: 1.5em;
+        font-size: 1.2em;
         padding: 10px;
 
         /* border: 1px solid greenyellow */
     }
 
-
     /* Ocultar textos da logo */
     /* Nome Tiago Costa */
-
     .logo_text {
         display: none;
     }
-
 
     #menu {
         display: none;
         position: absolute;
         width: 100%;
-        top: 70px;
+        top: 55px;
         right: 0px;
-        height: calc(50vh - 70px);
+        height: calc(60vh - 55px);
         background-color: rgba(17, 17, 17, 0.973);
         z-index: 1000;
 
@@ -626,11 +613,6 @@ footer {
 
         display: block;
     }
-
-
-
-    /* Ocultar#NavBar */
-
 
     /* Ocultar menu Github e Linkedin*/
     .icons_social_midia {
@@ -702,7 +684,7 @@ footer {
 
     .s3_box {
         display: flex;
-        /* flex-direction: column; */
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
         max-width: 370px;
@@ -721,17 +703,18 @@ footer {
 
         border: 2px solid blue;
     } */
+    .section3 {}
+
 
     .port {
         display: flex;
-        align-items: center;
         justify-content: center;
         width: 100vw;
-        height: 49%;
-        font-size: 2em;
+        height: 45vh;
+        font-size: 1.5em;
         color: white;
 
-        /* border: 2px solid rgb(255, 38, 0); */
+        border: 1px solid rgb(255, 38, 0);
     }
 
 
