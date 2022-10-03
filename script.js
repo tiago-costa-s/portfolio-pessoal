@@ -5,7 +5,7 @@ function esconderMenu() {
     let cabeca = document.getElementById("header");
     cabeca.setAttribute = "display = none";
 
-    // cabeca.style.backgroundColor="red";
+    // cabeca.style.backgroundColor="rgba(250, 250, 250, 0)";
 }
 
 // Alterar fundo da NavBar ao realizar o Scroll

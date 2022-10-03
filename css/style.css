@@ -93,7 +93,7 @@ header {
 
 #menu a {
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 500;
     color: white;
     transition-duration: 600ms;
@@ -351,23 +351,22 @@ h4 {
     height: 100%;
     color: white;
     font-style: normal;
+    font-weight: bold;
     text-align: center;
     text-decoration: none;
 }
 
 .port a:hover {
-    font-weight: bold;
+    font-weight: normal;
     background-color: #18181875;
 }
 
 .port p {
     width: 100%;
-    background-color: #18181836;
+    background-color: #18181856;
 
     /* border: 2px solid red; */
 }
-
-
 
 #pers {
     background-image: url("https://i.postimg.cc/CLMxpy5B/freelancer.jpg");
@@ -475,7 +474,7 @@ input {
 
 .formulario input {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     border: 0px;
     border-bottom: 1px solid white;
     outline: 0;
@@ -496,7 +495,7 @@ input {
     max-width: 300px;
     min-width: 100%;
     max-height: 300px;
-    min-height: 250px;
+    min-height: 150px;
     background-color: #000000;
     border: 1px solid white;
     padding: 10px;
@@ -506,7 +505,7 @@ input {
 
 .textAlerta {
     width: 100%;
-    height: 35px;
+    height: 20px;
 
     /* border: 2px solid red; */
 }
@@ -549,7 +548,7 @@ footer {
 /*Media Queries*/
 
 /* Smartphone Iphone 375 x 667 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     /* HEADER */
     header {
@@ -707,13 +706,12 @@ footer {
         display: flex;
         justify-content: center;
         width: 100vw;
-        height: 100%;
+        height: 80%;
         font-size: 1.5em;
         color: white;
 
         /* border: 1px solid rgb(255, 38, 0); */
     }
-
 
     /* SECTION 4 */
 
