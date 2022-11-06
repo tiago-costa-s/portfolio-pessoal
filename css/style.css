@@ -168,7 +168,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: calc(100vh - 110px);
+    height: auto;
 
     /* border: 2px solid green; */
 }
@@ -180,25 +180,30 @@ h4 {
     margin: auto;
     font-size: 2.2em;
     text-align: center;
-    padding: 5px;
+    padding: 15px;
 
     /* border: 2px solid red; */
 }
 
 /* SECTION 1 */
-#s1 {
+#s1 {    
     background-image: url("https://i.postimg.cc/tJVnMnxx/notebook-M.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 
     /* border: 2px solid rgb(255, 0, 212); */
 }
 
 .s1_box_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     max-width: 1000px;
     min-width: 300px;
+    height: auto;
     border-right: 1px solid rgb(243, 6, 6);
     animation-name: efeitoDigitacao;
     animation-duration: 3s;
@@ -210,8 +215,7 @@ h4 {
 
 .s1_box_text h1 {
     font-style: normal;
-    font-size: 3.5em;
-    padding-bottom: 20px;
+    font-size: 3.5em;   
 
     /* border: 1px solid blue; */
 }
@@ -314,7 +318,7 @@ h4 {
 
 /* SECTION 3 */
 #s3 {
-    display: flex;
+    display: flex;  
     justify-content: space-between;
     background-color: #131313;
 }
@@ -337,7 +341,7 @@ h4 {
     justify-content: center;
     width: 100%;
     max-width: 590px;
-    height: 90%;
+    height: 100vh;
     font-size: 2em;
 
     /* border: 1px solid blue; */
@@ -695,10 +699,11 @@ footer {
     }
 
     #s3 {
-        height: 200vh;
+        height: 200vh;      
     }
 
     #s3_box {
+        
         height: 100%;
     }
 
@@ -715,14 +720,14 @@ footer {
 
     /* SECTION 4 */
 
-    .s4 {
+    .s4 {       
         background-color: #000000;
 
         /* border: 2px solid rgb(255, 0, 221); */
     }
 
     .s4_box {
-        display: flex;
+        display: flex;        
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-around;
