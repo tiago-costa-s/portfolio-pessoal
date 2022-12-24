@@ -1,1 +1,2 @@
 # Portfolio-Pessoal
+## Tecnologias Utilizadas
