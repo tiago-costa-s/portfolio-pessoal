@@ -231,6 +231,10 @@ body {
     background-image: url("https://i.postimg.cc/CL2xKgB5/projetofashion.jpg");
 }
 
+#project-4 {
+    background-image: url("https://i.postimg.cc/Y24HvfjL/Capa.png");
+}
+
 .square:hover {
     background-color: rgba(0, 0, 0, 0.548);
 }
