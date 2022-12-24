@@ -1,3 +1,6 @@
 # Portfolio-Pessoal
 ### Tecnologias Utilizadas
-Html
+- HTML 5
+- CSS 3
+- Java Script
+- Bootstrap
