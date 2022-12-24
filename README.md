@@ -6,4 +6,4 @@
 - Bootstrap
 
 
-Link do projeto:  golden-frangipane-9503df.netlify.app/
+Link: https://golden-frangipane-9503df.netlify.app/
