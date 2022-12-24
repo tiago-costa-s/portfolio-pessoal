@@ -1,3 +1,3 @@
 # Portfolio-Pessoal
-## Tecnologias Utilizadas
+### Tecnologias Utilizadas
 Html
