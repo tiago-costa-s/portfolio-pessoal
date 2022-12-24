@@ -1,15 +1,10 @@
 :root {
-    /* --primary-color: #000000;
-    --secundary-color: #ffffff;
-    --tertiary-color: #acacac;
-    --quaternary-color: #e9e9e9;
-    --urticaria-color: #0095F6; */
 
-    --primary-color: #ffffff;
-    --secundary-color: #000000;
-
-    --tertiary-color: #545454;
-    --quaternary-color: #9c9c9c;
+    --text-primary-color: #ffffff;
+    --text-secundary-color: #000000;
+    --text-tertiary-color: #9c9c9c;
+    --border-color: #545454;
+    
     --urticaria-color: #129af5;
 }
 
@@ -18,7 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--primary-color);
+    color: var(--text-primary-color);
     text-decoration: none;
 }
 
@@ -28,7 +23,7 @@ a {
 
 .bi {
     font-size: 1.3rem;
-    color: var(--primary-color);
+    color: var(--text-primary-color);
 }
 
 i,
@@ -43,8 +38,8 @@ i,
     position: fixed;
     width: 100%;
     padding: .4rem;
-    background-color: var(--secundary-color);
-    border-bottom: 1px solid var(--tertiary-color);
+    background-color: var(--text-secundary-color);
+    border-bottom: 1px solid var(--border-color);
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); */
 }
 
@@ -93,7 +88,7 @@ body {
     flex-direction: column;
     width: 100%;
     max-width: 920px;
-    background-color: var(--secundary-color);
+    background-color: var(--text-secundary-color);
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     border-radius: 10px;
     margin-bottom: 1rem;
@@ -103,13 +98,13 @@ body {
     font-weight: normal;
     text-align: center;
     padding: 1rem;
-    border-bottom: 1px solid var(--tertiary-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .sections-header h2 {
     font-size: 1rem;
     font-weight: normal;
-    color: var(--quaternary-color);
+    color: var(--text-tertiary-color);
 }
 
 .subsections {
@@ -128,7 +123,7 @@ body {
     width: 100%;
     max-width: 420px;
     height: 528px;
-    border: 1px solid var(--tertiary-color);
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     padding: 1rem;
 }
@@ -154,12 +149,12 @@ body {
 
 #profile-name {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: var(--text-primary-color);
 }
 
 .profile-labels {
     font-size: .9rem;
-    color: var(--quaternary-color);
+    color: var(--text-tertiary-color);
     margin-bottom: .3rem;
 }
 
@@ -177,7 +172,7 @@ body {
 /* Resume */
 #profile-filds-title {
     font-size: 1.1rem;
-    color: var(--quaternary-color);
+    color: var(--text-tertiary-color);
 }
 
 #subsections-articles-resume p {
@@ -213,7 +208,7 @@ body {
 .project {
     width: 100%;
     background-size: cover;
-    border: 1px solid var(--quaternary-color);
+    border: 1px solid var(--text-tertiary-color);
 }
 
 .square {
@@ -247,7 +242,7 @@ body {
 
 .cards-title {
     font-size: .8rem;
-    color: var(--quaternary-color);
+    color: var(--text-tertiary-color);
     text-align: center;
     padding: 1rem;
     transition: 500ms;
@@ -266,16 +261,16 @@ body {
 
 #form input,
 textarea {
-    color: var(--secundary-color);
+    color: var(--text-secundary-color);
     width: 100%;
     padding: 1rem;
-    border: 1px solid var(--tertiary-color);
-    background-color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    background-color: var(--text-primary-color);
     margin-bottom: 1rem;
 }
 
 #form input[type="submit"] {
-    color: var(--primary-color);
+    color: var(--text-primary-color);
     font-weight: bold;
     background-color: var(--urticaria-color);
 }
@@ -292,7 +287,7 @@ textarea {
 #footer {
     width: 100vw;
     height: 500px;
-    background-color: var(--secundary-color);
+    background-color: var(--text-secundary-color);
 }
 
 /* Mobile navbar */
@@ -318,18 +313,18 @@ textarea {
     left: 100%;
     height: 100%;
     width: 100%;
-    background-color: var(--secundary-color);
+    background-color: var(--text-secundary-color);
     padding: 2rem 2rem;
     transition: 500ms;
 }
 
 #mobile-navbar a {
-    color: var(--primary-color);
+    color: var(--text-primary-color);
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--quaternary-color);
+    border-bottom: 1px solid var(--text-tertiary-color);
 
 }
 
