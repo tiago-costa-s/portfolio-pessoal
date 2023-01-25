@@ -36,11 +36,21 @@ i,
     justify-content: space-around;
     position: fixed;
     width: 100%;
-    padding: .4rem;
+    padding: .7rem 0;
     background-color: var(--text-secundary-color);
     border-bottom: 1px solid var(--border-color);
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); */
 }
+
+#menu-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 920px;
+    padding: 0 1rem;
+}
+
 
 h1 {
     font-size: 1.6rem;
@@ -78,7 +88,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
+    padding: 0 1rem;
 }
 
 /* SEÇÕES */
@@ -347,6 +358,10 @@ textarea {
         justify-content: space-between;
         padding: 0;
     }
+    #menu-nav{       
+        max-width: 100%;
+        padding: 0 1rem;
+    }
 
     h1 {
         padding: .1rem .5rem;
@@ -361,6 +376,7 @@ textarea {
     #menu,
     #close-menu {
         display: block;
+        padding: 0 1rem;
     }
 
     /* Seções */
