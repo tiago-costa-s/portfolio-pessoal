@@ -230,28 +230,38 @@ body {
     transition: 500ms;
 }
 
-/* Calculadora IMC */
-#project-1 {   
-    background-image: url("https://i.postimg.cc/q7YkMQkW/desktop.png");
+/* My QR Code */
+#project-7 {
+    background-image: url("https://i.postimg.cc/zXQTTQ5D/my-qr-code.jpg");
 }
-/* Churrascometrô */
-#project-2 {
-    background-image: url("https://i.postimg.cc/rw7fgtg5/desktop.png");
+
+/* Tabela Matematica*/
+#project-6 {
+    background-image: url("https://i.postimg.cc/D03Jry67/tela3.jpg");
 }
+
 /* kM360 */
-#project-3 {
+#project-5 {
     background-image: url("https://i.postimg.cc/BbTRpZ9B/Screenshot-3.png");
 }
-/* Escritorio Advocacia */
+
+/* Churrascometrô */
 #project-4 {
+    background-image: url("https://i.postimg.cc/rw7fgtg5/desktop.png");
+}
+
+/* Calculadora IMC */
+#project-3 {
+    background-image: url("https://i.postimg.cc/q7YkMQkW/desktop.png");
+}
+
+/* Escritorio Advocacia */
+#project-2 {
     background-image: url("https://i.postimg.cc/YCdbkXPs/escritorioadvocacia.jpg");
 }
-/* Projeto Fashion */
-#project-5 {
-    background-image: url("https://i.postimg.cc/CL2xKgB5/projetofashion.jpg");
-}
+
 /* Ds Movie */
-#project-6 {
+#project-1 {
     background-image: url("https://i.postimg.cc/TP0wfWrM/dsmovie.png");
 }
 
