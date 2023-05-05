@@ -2,8 +2,8 @@
 
     --text-primary-color: #ffffff;
     --text-secundary-color: #000000;
-    --text-tertiary-color: #9c9c9c;   
-     --border-color: #545454;    
+    --text-tertiary-color: #9c9c9c;
+    --border-color: #545454;
     --urticaria-color: #129af5;
 }
 
@@ -42,7 +42,7 @@ i,
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); */
 }
 
-#menu-nav{
+#menu-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -231,6 +231,11 @@ body {
 }
 
 /* My QR Code */
+
+#project-8 {
+    background-image: url("https://i.postimg.cc/jdpBRNB4/Screenshot-1.jpg");
+}
+
 #project-7 {
     background-image: url("https://i.postimg.cc/zXQTTQ5D/my-qr-code.jpg");
 }
@@ -374,7 +379,8 @@ textarea {
         justify-content: space-between;
         padding: 0;
     }
-    #menu-nav{       
+
+    #menu-nav {
         max-width: 100%;
         padding: 0 1rem;
     }
