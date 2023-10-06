@@ -1,245 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiago Costa</title>
-    <link rel="shortcut icon" href="https://i.postimg.cc/GmB7JCC3/Screenshot-1.png" type="image/x-icon">
-    <!-- Google Fonts -->
-    <!-- Lato -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:wght@100&family=Roboto:wght@100;300&family=Rubik:wght@300&display=swap"
-        rel="stylesheet">
-    <!-- Dancing -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:wght@100&family=Roboto:wght@100;300&family=Rubik:wght@300&display=swap"
-        rel="stylesheet">
-    <!-- Estilo CSS -->
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Refactore Portfólio</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Scripts -->
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <script src="/js/script.js" defer></script>
+
+    <!-- Google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100&family=Roboto:wght@100;300&family=Rubik:wght@300&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!-- Cabeçalho -->
-    <header id="header">
-        <div id="menu-nav">
-            <h1>Tiago Costa</h1>
-            <!-- Menu Desktop -->
-            <nav id="navbar">
-                <a href="#">Home</a>
-                <a href="#sections-sobre">Sobre</a>
-                <a href="#sections-portifolio">Portfólio</a>
-                <a href="#sections-contato">Contato</a>
-            </nav>
-            <!-- Menu Mobile -->
-            <i class="bi bi-list" id="menu"></i>
-            <nav id="mobile-navbar">
-                <i class="bi bi-x-lg" id="close-menu"></i>
-                <a href="#">Home</a>
-                <a href="#">Sobre</a>
-                <a href="#">Portfólio</a>
-                <a href="#">Contato</a>
-            </nav>
-        </div>
+    <div id="container">
+        <header id="header">
+            <div id="icon">Icone</div>
+            <div id="nav-container">
+                <!-- navegação -->
+                <nav id="nav">
+                    <a href="" id="">Home</a>
+                    <a href="" id="">Sobre mim</a>
+                    <a href="" id="">Tech Stack</a>
+                    <a href="" id="">Projetos</a>
+                    <a href="" id="">Contatos</a>
+                </nav>
+                <!--  -->
+                <div id="social-media">
+                    <a href=""><i class="bi bi-github"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </header>
 
-    </header>
-    <main id="main">
-        <!-- Sobre -->
-        <section class="sections" id="sections-sobre">
-            <header class="sections-header">
-                <h2>Sobre</h2>
-            </header>
-            <section class="subsections">
-                <article class="subsections-articles" id="subsections-about">
-                    <div id="profile-photo">
-                        <img src="https://i.postimg.cc/L5DKZz82/profile-pic.png" alt="" id="profile-photo">
-                        <p class="profile-labels" id="profile-name">Tiago Costa</p>
-                    </div>
-                    <div class="profile-informations">
-                        <p class="profile-labels">idade</p>
-                        <p class="profile-filds">33 anos</p>
-                    </div>
-                    <div class="profile-informations">
-                        <p class="profile-labels">cidade</p>
-                        <p class="profile-filds">Belo Horizonte - MG</p>
-                    </div>
-                    <div class="profile-informations">
-                        <p class="profile-labels">objetivo profissional</p>
-                        <p class="profile-filds">Desenvolvedor Web Front End</p>
-                    </div>
-                    <div class="profile-informations">
-                        <p class="profile-labels">formação</p>
-                        <p class="profile-filds">Analise e Desenvolvimento de Sistemas</p>
-                    </div>
-                    <div class="profile-informations">
-                        <p class="profile-labels">instituição</p>
-                        <p class="profile-filds">Faculdade UNA - BH</p>
-                    </div>
-                    <div class="profile-informations ">
-                        <p class="profile-labels">midia social</p>
-                        <a href="https://www.linkedin.com/in/tiago-costa-80a34097/" target="_blank"><i
-                                class="bi bi-linkedin"></i></a>
-                        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
-                        <a href="https://github.com/Tiago-Costa-s" target="_blank"><i class="bi bi-github"></i></a>
+        <!-- Home -->
+        <section id="home">
+            <div id="my-presentation">
+                <h1 id="title">
+                    <span>Olá,</span>
+                    <span>Meu nome e</span>
+                    <span id="name">Tiago Costa</span>
+                    <span>Eu sou</span>
+                    <span>Desenvolvedor React</span>
+                </h1>
+                <img src="/assets/images/perfil2.png" alt="">
+            </div>
+            <div id="contacts">
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+                <a href=""><i class="bi bi-envelope-fill"></i></a>
+            </div>
+        </section>
 
-                    </div>
-                </article>
-                <article class="subsections-articles" id="subsections-articles-resume">
-                    <div class="profile-filds">
-                        <p id="profile-filds-title">Resumo</p>
-                        <p>Estudante na área da Tecnologia da Informação.</p>
-                        <p>Mineiro, originário da região metropolitana de <strong>Belo Horizonte</strong>, graduado em
-                            <strong>Análise e
-                                Desenvolvimento de Sistemas</strong> pelo Centro Universitário UNA.
-                        </p>
-                        <p>Atualmente está focando os seus estudos no desenvolvimento de aplicações web. Possui
-                            conhecimentos em <strong>HTML, CSS (Flex-box, Grid), Javascript e Node JS e Java
-                                POO</strong>.
-                        </p>
-                        <p>Tem o objetivo pessoal de se tornar um <strong>Desenvolvedor Web Full Stack</strong>,
-                            utilizando
-                            as tecnologias mais modernas do mercado</p>
-                    </div>
-                </article>
-            </section>
-        </section>
-        <!-- Portfólio -->
-        <section class="sections" id="sections-portifolio">
-            <header class="sections-header">
-                <h2>Portfólio</h2>
-            </header>
-            <section class="subsections">
-                <!-- Cards Projetos -->
-                <article class="subsections-articles" id="subsections-articles-portfolio">
-                    <!-- Calculadora IMC Advanced -->
-                    <div class="cards-projects">
-                        <a href="https://github.com/Tiago-Costa-s/calculadora_imc_advanced" target="_blank">
-                            <div class="project" id="project-8">
-                                <div class="square"><i class="bi bi-github"></i></div>
-                            </div>
-                        </a>
-                        <a href="https://calculadora-imc-advanced.vercel.app/" target="_blank">
-                            <p class="cards-title">Calculadora de IMC Advanced</p>
-                        </a>
-                    </div>
+        <!-- sobre min -->
+        <section id="aboult">
+            <article class="aboult-containers" id="about-me">
+                <h3>Sobre min</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nulla nihil quisquam molestiae,
+                    laborum distinctio unde! Repudiandae neque exercitationem provident soluta harum ex, facilis,
+                    vero pariatur laudantium voluptate tempora sunt.</p>
+            </article>
 
-                    <!-- My QR Code -->
-                    <div class="cards-projects">
-                        <a href="https://github.com/Tiago-Costa-s/my_qr_code" target="_blank">
-                            <div class="project" id="project-7">
-                                <div class="square"><i class="bi bi-github"></i></div>
-                            </div>
-                        </a>
-                        <a href="https://myqrcode-js.netlify.app/" target="_blank">
-                            <p class="cards-title">My QR Code</p>
-                        </a>
+            <article class="aboult-containers" id="professional-experience">
+                <h3>Experiência Profissional</h3>
+                <div class="jobs">
+                    <header>
+                        <p class="title">Desenvolvedor Web Front End</p>
+                        <p class="regime">Voluntario</p>
+                    </header>
+                    <div class="info">
+                        <p class="company"><i class="bi bi-building"></i>Pipoca Agil</p>
+                        <p class="city"><i class="bi bi-geo-alt"></i>Rio de Janeiro</p>
+                        <p class="period"><i class="bi bi-calendar3"></i>Jun 2023</p>
                     </div>
-                    <!-- Tabela Matematica -->
-                    <div class="cards-projects">
-                        <a href="https://github.com/Tiago-Costa-s/tabela_matematica_js" target="_blank">
-                            <div class="project" id="project-6">
-                                <div class="square"><i class="bi bi-github"></i></div>
-                            </div>
-                        </a>
-                        <a href="https://tabelamatematica.netlify.app/" target="_blank">
-                            <p class="cards-title">Tabela Matemática</p>
-                        </a>
+                </div>
+                <div class="jobs">
+                    <header>
+                        <p class="title">Analista de Suporte CRM</p>
+                        <p class="regime">Estágio</p>
+                    </header>
+                    <div class="info">
+                        <p class="company"><i class="bi bi-building"></i>CRM Educacional</p>
+                        <p class="city"><i class="bi bi-geo-alt"></i>Belo Horizonte</p>
+                        <p class="period"><i class="bi bi-calendar3"></i>Mai 2022 - Mai 2023</p>
                     </div>
-                    <!-- Km360 -->
-                    <div class="cards-projects">
-                        <a href="https://github.com/Tiago-Costa-s/km360" target="_blank">
-                            <div class="project" id="project-5">
-                                <div class="square"><i class="bi bi-github"></i></div>
-                            </div>
-                        </a>
-                        <a href="https://km360.netlify.app/" target="_blank">
-                            <p class="cards-title">kM360</p>
-                        </a>
+                </div>
+            </article>
+
+            <article class="aboult-containers" id="academic-education">
+                <h3>Formação Academica</h3>
+                <div class="jobs">
+                    <header>
+                        <p class="title">Analise e Desenvolvimento de Sistemas</p>
+                        <p class="regime">Presencial</p>
+                    </header>
+                    <div class="info">
+                        <p class="company"><i class="bi bi-building"></i>Faculdade UNA</p>
+                        <p class="city"><i class="bi bi-geo-alt"></i>Belo Horizonte</p>
+                        <p class="period"><i class="bi bi-calendar3"></i>Jan 2020 - Jul 2022</p>
                     </div>
-                    <!-- Churrascômetro -->
-                    <div class="cards-projects">
-                        <a href="https://github.com/Tiago-Costa-s/churrascometro" target="_blank">
-                            <div class="project" id="project-4">
-                                <div class="square"><i class="bi bi-github"></i></div>
-                            </div>
-                        </a>
-                        <a href="https://churrascometro-simple-c56ac4.netlify.app/" target="_blank">
-                            <p class="cards-title">Churrascômetro</p>
-                        </a>
-                    </div>
-                    <!-- Calculadora de IMC -->
-                    <div class="cards-projects">
-                        <a href="https://github.com/Tiago-Costa-s/calculator_imc_simple" target="_blank">
-                            <div class="project" id="project-3">
-                                <div class="square"><i class="bi bi-github"></i></div>
-                            </div>
-                        </a>
-                        <a href="https://calculator-imc-simple-c48e2b.netlify.app/" target="_blank">
-                            <p class="cards-title">Calculadora IMC</p>
-                        </a>
-                    </div>
-                    <!-- Escritorio de Advocacia -->
-                    <div class="cards-projects">
-                        <a href="https://github.com/Tiago-Costa-s/Escritorio-Advocacia" target="_blank">
-                            <div class="project" id="project-2">
-                                <div class="square"><i class="bi bi-github"></i></div>
-                            </div>
-                        </a>
-                        <a href="https://escritorio-advocacia.netlify.app/" target="_blank">
-                            <p class="cards-title">Escritorio de Advocacia</p>
-                        </a>
-                    </div>
-                    <!-- DS Movie -->
-                    <div class="cards-projects">
-                        <a href="https://github.com/Tiago-Costa-s/dsmovie" target="_blank">
-                            <div class="project" id="project-1">
-                                <div class="square"><i class="bi bi-github"></i></div>
-                            </div>
-                        </a>
-                        <a href="https://ds-movie-0c5867.netlify.app/" target="_blank">
-                            <p class="cards-title">DS Movie</p>
-                        </a>
-                    </div>
-                </article>
-            </section>
+                </div>
+            </article>
         </section>
-        <!-- Contato -->
-        <section class="sections" id="sections-contato">
-            <header class="sections-header">
-                <h2>Contato</h2>
-            </header>
-            <section class="subsections" id="">
-                <article class="subsections-articles" id="subsections-articles-contact">
-                    <form id="form" action="">
-                        <input type="text" name="" id="" placeholder="Nome">
-                        <input type="mail" name="" id="" placeholder="e-mail">
-                        <input type="tel" name="" id="" placeholder="Telefone">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Digite a sua mensagem. . ."></textarea>
-                        <input type="submit" value="Enviar">
-                    </form>
-                    <div class="profile-informations" id="profile-informations-form">
-                        <a href="mailto:tiagocostasantos0013@gmail.com" target="_blank"><i
-                                class="bi bi-envelope-fill"></i></a>
-                        <a href="https://api.whatsapp.com/send?phone=5531991932470&text=Ol%C3%A1%20Tiago!%20Gostaria%20de%20falar%20com%20voc%C3%AA."
-                            target="_blank"><i class="bi bi-whatsapp"></i></a>
-                    </div>
-                </article>
-            </section>
+        <!-- My Stack -->
+        <section id="my-stack">
+            <h2>My Tech Stack</h2>
+            <p class="description-section ">Tecnologias com as quais tenho trabalhado recentemente</p>
+            <div class="stack-container">
+                <img src="./assets/icons/react.svg" alt="">
+                <img src="./assets/icons/file-type-js-official.svg" alt="">
+                <img src="./assets/icons/file-type-html.svg" alt="">
+                <img src="./assets/icons/file-type-css.svg" alt="">
+                <img src="./assets/icons/bootstrap.svg" alt="">
+                <img src="./assets/icons/java.svg" alt="">
+                <img src="./assets/icons/mysql.svg" alt="">
+                <img src="./assets/icons/file-type-vite.svg" alt="">
+                <img src="./assets/icons/file-type-vscode.svg" alt="">
+                <img src="./assets/icons/eclipse.svg" alt="">
+                <!-- <img src="./assets/icons/github-fill.svg" alt="">    -->
+            </div>
         </section>
-    </main>
-    <!-- Footer -->
-    <footer id="footer">
-        <p>2023 &copy Tiago Costa</p>
-    </footer>
+        <!-- projetos -->
+        <section id="projects">
+            <h2>Projetos</h2>
+            <p class="description-section ">Coisas que construí até agora</p>
+        </section>
+    </div>
 </body>
 
 </html>
