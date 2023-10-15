@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refactore Portfólio</title>
+    <title>Tiago DEV</title>
     <!-- Styles -->
     <link rel="stylesheet" href="./css/style.css">
+
     <!-- Scripts -->
+    <script src="/js/script.js" defer></script>
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
@@ -22,6 +24,7 @@
     <div id="container">
         <header id="header">
             <div id="icon">Icone</div>
+            <img src="https://looka.com/s/152731285" alt="">
             <div id="nav-container">
                 <!-- navegação -->
                 <nav id="nav">
@@ -32,10 +35,10 @@
                     <a href="" id="">Contatos</a>
                 </nav>
                 <!--  -->
-                <div id="social-media">
+                <!-- <div id="social-media">
                     <a href=""><i class="bi bi-github"></i></a>
                     <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> -->
             </div>
         </header>
 
@@ -47,13 +50,18 @@
                     <span>Meu nome e</span>
                     <span id="name">Tiago Costa</span>
                     <span>Eu sou</span>
-                    <span>Desenvolvedor React</span>
+                    <span>Desenvolvedor</span>
                 </h1>
                 <img src="/assets/images/perfil2.png" alt="">
             </div>
             <div id="contacts">
-                <a href=""><i class="bi bi-whatsapp"></i></a>
-                <a href=""><i class="bi bi-envelope-fill"></i></a>
+                <!-- <a href=""><i class="bi bi-whatsapp"></i></a>
+                <a href=""><i class="bi bi-envelope-fill"></i></a> -->
+                <a href="https://github.com/tiago-costa-s" target="_blank"><button><i
+                            class="bi bi-github"></i>Github</button></a>
+
+                <a href="https://www.linkedin.com/in/tiago-costa-s/" target="_blank"> <button><i
+                            class="bi bi-linkedin"></i>Linkedin</button></a>
             </div>
         </section>
 
@@ -68,7 +76,7 @@
 
             <article class="aboult-containers" id="professional-experience">
                 <h3>Experiência Profissional</h3>
-                <div class="jobs">
+                <!-- <div class="jobs">
                     <header>
                         <p class="title">Desenvolvedor Web Front End</p>
                         <p class="regime">Voluntario</p>
@@ -78,18 +86,8 @@
                         <p class="city"><i class="bi bi-geo-alt"></i>Rio de Janeiro</p>
                         <p class="period"><i class="bi bi-calendar3"></i>Jun 2023</p>
                     </div>
-                </div>
-                <div class="jobs">
-                    <header>
-                        <p class="title">Analista de Suporte CRM</p>
-                        <p class="regime">Estágio</p>
-                    </header>
-                    <div class="info">
-                        <p class="company"><i class="bi bi-building"></i>CRM Educacional</p>
-                        <p class="city"><i class="bi bi-geo-alt"></i>Belo Horizonte</p>
-                        <p class="period"><i class="bi bi-calendar3"></i>Mai 2022 - Mai 2023</p>
-                    </div>
-                </div>
+                </div> -->
+
             </article>
 
             <article class="aboult-containers" id="academic-education">
@@ -129,7 +127,62 @@
         <section id="projects">
             <h2>Projetos</h2>
             <p class="description-section ">Coisas que construí até agora</p>
+            <div class="project-container">
+                <div id="projects-list">
+                    <div class="project">
+                        <div class="container-project">
+                            <p class="name">Paper Note</p>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sit suscipit
+                                    consequuntur minus delectus aliquam fugiat nam recusandae.</p>
+                            </div>
+                            <p class="stack">Tech stack : <span> HTML5, CSS e JavaScrip</span></p>
+                            <div class="links-project">
+                                <a href="" target="_blank"><i class="bi bi-link-45deg"></i><span>Like Preview</span></a>
+                                <a href="" target="_blank"><i class="bi bi-github"></i><span>View Code</span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="container-project">
+                            <p class="name">2</p>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sit suscipit
+                                    consequuntur minus delectus aliquam fugiat nam recusandae.</p>
+                            </div>
+                            <p class="stack">Tech stack : <span> HTML5, CSS e JavaScrip</span></p>
+                            <div class="links-project">
+                                <a href="" target="_blank"><i class="bi bi-link-45deg"></i><span>Like Preview</span></a>
+                                <a href="" target="_blank"><i class="bi bi-github"></i><span>View Code</span></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="container-project">
+                            <p class="name">3 </p>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sit suscipit
+                                    consequuntur minus delectus aliquam fugiat nam recusandae.</p>
+                            </div>
+                            <p class="stack">Tech stack : <span> HTML5, CSS e JavaScrip</span></p>
+                            <div class="links-project">
+                                <a href="" target="_blank"><i class="bi bi-link-45deg"></i><span>Like Preview</span></a>
+                                <a href="" target="_blank"><i class="bi bi-github"></i><span>View Code</span></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
         </section>
+        <footer id="footer">
+            
+        </footer>
     </div>
 </body>
 
