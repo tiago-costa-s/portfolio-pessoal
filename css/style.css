@@ -32,6 +32,7 @@ a {
     margin: auto;
     width: 100%;
     max-width: 1204px;
+    padding: 0 1rem;
 }
 
 #header {
@@ -129,7 +130,7 @@ a {
 }
 
 #title #name {
-    background: linear-gradient(to right, rgba(19, 176, 245, 1), rgba(231, 15, 170, 1));
+    background: linear-gradient(to right, #13b0f5, #e70faa);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -137,8 +138,8 @@ a {
 
 #my-presentation img {
     width: 100%;
-    max-width: 345px;
-    max-height: 345px;
+    max-width: 445px;
+    max-height: 445px;
     border-radius: 50%;
     border: 10px solid transparent;
     background-image: linear-gradient(80deg, rgba(231, 15, 170, 1), rgba(0, 192, 253, 1));
@@ -146,11 +147,41 @@ a {
 }
 
 #contacts {
+    display: flex;
+    gap: 2rem;
     position: absolute;
     bottom: 0;
     padding-bottom: 8rem;
 
     /* border: 1px solid red; */
+}
+
+#contacts button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #42446E;
+    width: 150px;
+    height: auto;
+    padding: 2px;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 1px solid #42446E;
+    background-color: blac;
+    cursor: pointer;
+    transition: .7s;
+}
+
+#contacts button:hover {
+    color: #fff;
+    border: 0;
+    background-color: #42446E;
+}
+
+#contacts button i {
+    font-size: 1.5rem;
 }
 
 #contacts a {
@@ -174,7 +205,6 @@ a {
 
     /* border: 1px solid blue; */
 }
-
 
 .jobs {
     border-bottom: 2px solid #EBEAED;
@@ -208,12 +238,13 @@ a {
 }
 
 .info p {
+    display: flex;
+    align-items: center;
     font-size: 12px;
     text-align: center;
 }
 
 .info i {
-    /* color: red; */
     font-size: 1rem;
     margin-right: 5px;
 }
@@ -222,20 +253,30 @@ a {
     margin-right: 2rem;
 }
 
+.info .company:not(last-child) {
+    text-align: start;
+    min-width: 130px;
+}
+
 .info .period {
     margin-left: auto;
 }
 
-/* My stack */
+.info .period:last-child {
+    text-align: end;
+}
+
+/* my stack */
 #my-stack {
     padding: 5rem 0;
+}
 
-    /* border: 1px solid red; */
+#my-stack p {
+    margin-bottom: 96px;
 }
 
 .description-section {
     text-align: center;
-    margin-bottom: 140px;
     font-size: 2rem;
     color: #666666;
 }
@@ -256,8 +297,87 @@ a {
 
 /* Projetos */
 #projects {
-    width: 100%;
     padding: 5rem 0;
+}
 
-    /* border: 1px solid blue; */
+#projects .description-section {
+    margin-bottom: 96px;
+}
+
+#projects-list {
+    display: flex;
+    justify-content: center;
+    gap: 37px;
+    width: 100%;
+}
+
+.project {
+    display: flex;
+    align-items: end;
+    width: 375px;
+    height: 567px;
+    border: 1px solid black;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 1px 1px 50px rgb(209, 209, 209);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    background-image: url("https://i.postimg.cc/yNhjQv9L/screencapture-127-0-0-1-5501-index-html-2023-08-29-11-31-44.png");
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.container-project {
+    display: none;
+    height: 60%;
+    padding: 1.75rem;
+    bottom: 0;
+    background-color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container-project .name {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 17px;
+}
+
+.container-project .description {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 12px;
+}
+
+.container-project .stack {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 21px;
+}
+
+.container-project .stack span {
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 6px;
+    color: #42446E;
+}
+
+.container-project .links-project {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-project .links-project a {
+    display: flex;
+    font-size: 16px;
+    text-decoration: dotted;
+    color: #000;
+    text-decoration: underline;
+}
+
+.container-project .links-project i:not(:last-child) {
+    margin-right: 10px;
 }
