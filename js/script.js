@@ -119,21 +119,21 @@ const project = document.querySelectorAll(".project");
 console.log(project)
 
 
-project.forEach((proj) => {
+// project.forEach((proj) => {
 
-    proj.addEventListener("mouseenter", (e) => {
-        const element = e.target;
-        const aaa = element.querySelector(".container-project");
-        aaa.style.display = "none";
-        aaa.style.display = "block";
+//     proj.addEventListener("mouseenter", (e) => {
+//         const element = e.target;
+//         const aaa = element.querySelector(".container-project");
+//         // aaa.style.display = "none";
+//         // aaa.style.display = "block";
 
-    });
+//     });
 
-    proj.addEventListener("mouseleave", (e) => {
-        const element = e.target;
-        const aaa = element.querySelector(".container-project");
-        aaa.style.display = "none";
-        aaa.style.display = "none";
+//     proj.addEventListener("mouseleave", (e) => {
+//         const element = e.target;
+//         const aaa = element.querySelector(".container-project");
+//         // aaa.style.display = "none";
+//         // aaa.style.display = "none";
 
-    });
-});
+//     });
+// });
