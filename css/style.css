@@ -26,6 +26,7 @@ h3 {
 
 a {
     text-decoration: none;
+    color: #989898;
 }
 
 #container {
@@ -43,14 +44,34 @@ a {
     width: 100%;
     max-width: 1204px;
     background-color: #F5F5F5;
-
-    /* border: 1px solid red; */
+    padding: 1.5rem 1rem;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    z-index: 6;
 }
 
-#icon {
-    width: 97px;
-    height: 59px;
-    background-color: #dfdfdf;
+#logo {
+    display: flex;
+    min-width: 110px;
+    height: 30px;
+    border: 2px solid #42446E;
+}
+
+#logo #initial-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30px;
+    color: #42446E;
+    font-weight: bold;
+}
+
+#logo #name-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #42446E;
+    color: #fff;
 }
 
 #nav-container {
@@ -61,20 +82,17 @@ a {
 #nav {
     text-align: center;
     width: 609px;
-    /* margin-right: 51px; */
-
-    /* border: 1px solid red; */
 }
 
 #nav a {
     font-size: 1.25rem;
     font-family: 'DM Sans', sans-serif;
-    transition: .500ms;
+    transition: .900ms;
     border-bottom: transparent;
-    /* border-bottom: 2px solid #000; */
 }
 
 #nav a:hover {
+    color: #666666;
     border-bottom: 2px solid #666666;
 }
 
@@ -82,22 +100,7 @@ a {
     margin-right: 32px;
 }
 
-#social-media {
-    font-size: 1.875rem;
-}
-
-#social-media a:not(:last-child),
-#contacts a:not(:last-child) {
-    margin-right: 20px;
-}
-
-#social-media a,
-#nav a,
-#contacts a {
-    color: #666666;
-}
-
-/* Home */
+/* home */
 #home {
     display: flex;
     flex-direction: column;
@@ -105,9 +108,6 @@ a {
     width: 100%;
     min-height: calc(100vh - 0px);
     padding: 5rem 0;
-
-    /* background-color: rgb(253, 209, 209); */
-    /* border: 1px solid red; */
 }
 
 #my-presentation {
@@ -115,8 +115,6 @@ a {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-
-    /* border: 1px solid blue; */
 }
 
 #title {
@@ -146,17 +144,15 @@ a {
     overflow: hidden;
 }
 
-#contacts {
+#social-media {
     display: flex;
     gap: 2rem;
     position: absolute;
     bottom: 0;
     padding-bottom: 8rem;
-
-    /* border: 1px solid red; */
 }
 
-#contacts button {
+#social-media button {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -174,17 +170,17 @@ a {
     transition: .7s;
 }
 
-#contacts button:hover {
+#social-media button:hover {
     color: #fff;
     border: 0;
     background-color: #42446E;
 }
 
-#contacts button i {
+#social-media button i {
     font-size: 1.5rem;
 }
 
-#contacts a {
+#social-media a {
     font-size: 1.875rem;
 }
 
@@ -192,8 +188,6 @@ a {
 #aboult {
     padding: 5rem 0;
     color: #666666;
-
-    /* border: 1px solid green; */
 }
 
 .aboult-containers {
@@ -202,8 +196,6 @@ a {
     width: 100%;
     max-width: 704px;
     margin-bottom: 2.375rem;
-
-    /* border: 1px solid blue; */
 }
 
 .jobs {
@@ -287,8 +279,6 @@ a {
     align-items: center;
     justify-content: center;
     gap: 6.5rem;
-
-    /* border: 1px solid blue; */
 }
 
 .stack-container img {
@@ -318,24 +308,35 @@ a {
     height: 567px;
     border: 1px solid black;
     border-radius: 20px;
-    border: 0;
-    box-shadow: 1px 1px 50px rgb(209, 209, 209);
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    border: 10px solid black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 40px;
     background-image: url("https://i.postimg.cc/yNhjQv9L/screencapture-127-0-0-1-5501-index-html-2023-08-29-11-31-44.png");
     background-position: center;
     background-size: cover;
-
-
+   
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .container-project {
-    display: none;
     height: 60%;
     padding: 1.75rem;
     bottom: 0;
     background-color: #fff;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 0px 10px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    transform: translateY(100%);
+    transition: transform 0.5s ease-out;
+}
+
+.project:hover .container-project {
+    transform: translateY(0);
+}
+
+.container-project:hover {
+    transform: translateY(0);
 }
 
 .container-project .name {
@@ -380,4 +381,29 @@ a {
 
 .container-project .links-project i:not(:last-child) {
     margin-right: 10px;
+}
+
+@keyframes exemplo {
+    from {
+        background: linear-gradient(to right, #1199d3, #be0d8c);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+
+    to {
+        background: linear-gradient(to right, #13b0f5, #e70faa);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+}
+
+h4 {
+    font-size: 5rem;
+    animation-name: exemplo;
+    animation-duration: 5s;
+    animation-timing-function: linear infinite;
 }
