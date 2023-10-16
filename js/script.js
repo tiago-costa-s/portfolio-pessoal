@@ -1,44 +1,74 @@
-const professionExperience = [
+const person = {
+    firstName: "Tiago",
+    lastName: "da Costa Santos",
 
-    {
-        id: 3,
-        office: "Desenvolvedor Front End",
-        company: "Pipoca Ágil",
-        uf: "RJ",
-        city: "Rio de Janeiro",
-        start: "Mai 2022",
-        finish: "Atual",
-        regime: "Voluntario"
-    },
+    socialMedia: [
+        {
+            name: "Linkedin",
+            link: "https://www.linkedin.com/in/tiago-costa-s/"
 
-    {
-        id: 2,
-        office: "Analista de Suporte",
-        company: "CRM Educacional",
-        uf: "MG",
-        city: "Belo Horizonte",
-        start: "Mai 2021",
-        finish: "Maio 2022",
-        regime: "Estágio"
-    }
-];
+        },
 
-const projects = [
-    {
-        id: 1,
-        nome: "Paper Notes",
-        stacks: "HTML5, CSS, Java Script",
-        description: "O Paper Notes: Um aplicativo web para criar notas de texto de forma simples e moderna!",
-        link: "https://paper-notes.vercel.app/",
-        repository: "https://www.linkedin.com/feed/update/urn:li:activity:7089779550611476480/"
-    }
-];
+        {
+            name: "Github",
+            link: "//https://github.com/tiago-costa-s.linkedin.com/in/tiago-costa-s/"
 
+        }
+    ],
 
+    professionalHistory: [
+        {
+            id: 3,
+            office: "Desenvolvedor Front End",
+            company: "Pipoca Ágil",
+            uf: "RJ",
+            city: "Rio de Janeiro",
+            start: "Mai 2022",
+            finish: "Atual",
+            regime: "Voluntario"
+        },
+
+        {
+            id: 2,
+            office: "Analista de Suporte",
+            company: "CRM Educacional",
+            uf: "MG",
+            city: "Belo Horizonte",
+            start: "Mai 2021",
+            finish: "Maio 2022",
+            regime: "Estágio"
+        }
+    ],
+
+    projects: [
+        {
+            id: 1,
+            name: "Paper Notes",
+            stacks: "HTML5, CSS, Java Script",
+            image: "https://i.postimg.cc/MpwGDWg2/2-1.png",
+            description: "O Paper Notes: Um aplicativo web para criar notas de texto de forma simples e moderna!",
+            linkPreview: "https://paper-notes.vercel.app/",
+            linkRepository: "https://github.com/tiago-costa-s/paper-notes"
+        },
+
+        {
+            id: 2,
+            name: "Todo Paper",
+            stacks: "HTML5, CSS, Java Script",
+            image: "https://i.postimg.cc/Tw9f7WFf/to-do-paper-filtro-de-tarefas.png",
+            description: "O Paper Notes: Um aplicativo web para criar notas de texto de forma simples e moderna!",
+            linkPreview: "https://todo-paper.vercel.app/",
+            linkRepository: "https://github.com/Tiago-Costa-s/todo_paper"
+        },
+
+    ]
+}
+
+const professionsResume = person.professionalHistory;
 
 const createProfessionalExperience = () => {
 
-    professionExperience.forEach((prof) => {
+    professionsResume.forEach((prof) => {
 
         const professionExperience = document.querySelector("#professional-experience");
         // experiencia profissional
@@ -114,26 +144,119 @@ createProfessionalExperience();
 
 
 
-const project = document.querySelectorAll(".project");
+const projectsListElement = document.querySelector("#project-list");
+const projectsResume = person.projects;
 
-console.log(project)
+projectsResume.forEach((project) => {
+
+    const projectElement = document.createElement("div");
+    projectElement.style.backgroundImage  = `url(${project.image})`;
+    projectElement.classList.add("project");
+
+    const containerProjectELement = document.createElement("div");
+    containerProjectELement.classList.add("container-project");
+    projectElement.appendChild(containerProjectELement);
+
+    const nameElement = document.createElement("p");
+    nameElement.classList.add("name");
+    nameElement.textContent = `${project.name}`;
+    containerProjectELement.appendChild(nameElement);
+
+    // descrição
+    const descriptionElement = document.createElement("div");
+    descriptionElement.classList.add("description");
+    descriptionElement.textContent = `${project.description}`;
+    containerProjectELement.appendChild(descriptionElement);
+    // paragrafo e span
+    const pDescriptionElement = document.createElement("p");
+    const spanDescription = document.createElement("span");
+    pDescriptionElement.appendChild(spanDescription);
+    descriptionElement.appendChild(pDescriptionElement);
+
+    const stackElement = document.createElement("p");
+    stackElement.classList.add("stack");
+    const spanStack = document.createElement("span");
+    spanStack.textContent = `${project.stacks}`;
+    stackElement.textContent = "Tech stack :";
+    stackElement.appendChild(spanStack);
+    containerProjectELement.appendChild(stackElement);
+
+    // links
+    const linksProjectElement = document.createElement("div");
+    linksProjectElement.classList.add("links-project");
+
+    // link preview
+    const previewElement = document.createElement("a");
+    previewElement.classList.add("previewLink");
+    previewElement.getElementsByClassName("previewLink");
+    previewElement.href = `${project.linkPreview}`;
+    previewElement.target = "_blank";
+    // icone link
+    const iconePreviewElement = document.createElement("i");
+    iconePreviewElement.classList.add("bi", "bi-link-45deg");
+    previewElement.appendChild(iconePreviewElement);
+    // span preview
+    const spanPreview = document.createElement("span");
+    spanPreview.textContent = "Link Preview"
+    previewElement.appendChild(spanPreview);
+    linksProjectElement.appendChild(previewElement);
 
 
-// project.forEach((proj) => {
+    // link github
+    const githubElement = document.createElement("a");
+    githubElement.classList.add("githubLink");
+    githubElement.getElementsByClassName(".githubLink");
+    githubElement.href = `${project.linkRepository}`;
+    githubElement.target = "_blank";
+    // icone link
+    const iconeGithubElement = document.createElement("i");
+    iconeGithubElement.classList.add("bi", "bi-github");
+    githubElement.appendChild(iconeGithubElement);
+    // span github
+    const spanGithub = document.createElement("span");
+    spanGithub.textContent = "Link Preview";
+    githubElement.appendChild(spanGithub);
+    linksProjectElement.appendChild(githubElement);
 
-//     proj.addEventListener("mouseenter", (e) => {
-//         const element = e.target;
-//         const aaa = element.querySelector(".container-project");
-//         // aaa.style.display = "none";
-//         // aaa.style.display = "block";
+    containerProjectELement.appendChild(linksProjectElement);
 
-//     });
+    projectsListElement.appendChild(projectElement);
+});
 
-//     proj.addEventListener("mouseleave", (e) => {
-//         const element = e.target;
-//         const aaa = element.querySelector(".container-project");
-//         // aaa.style.display = "none";
-//         // aaa.style.display = "none";
 
-//     });
-// });
+
+
+//  <div class="project">
+//     <div class="container-project">
+
+//         <p class="name">Paper Note</p>
+//         <div class="description">
+//             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sit suscipit
+//                 consequuntur minus delectus aliquam fugiat nam recusandae.</p>
+//         </div>
+//         <p class="stack">Tech stack n <span> HTML5, CSS e JavaScrip</span></p>
+//         <div class="links-project">
+//             <a href="" target="_blank"><i class="bi bi-link-45deg"></i><span>Like Preview</span></a>
+//             <a href="" target="_blank"><i class="bi bi-github"></i><span>View Code</span></a>
+//         </div>
+//     </div>
+// </div> 
+
+
+const text = `Olá</span> meu nome é Tiago Costa e um sou um Desenvolvedor front end`;
+const titleElement = document.getElementById("title");
+
+function typeText(index) {
+    titleElement.innerText = text.slice(0, index);
+}
+
+function animateText() {
+    for (let i = 0; i <= text.length; i++) {
+        setTimeout(() => {
+            typeText(i);
+        }, i * 100); // 100ms delay for each letter
+    }
+}
+
+// Trigger the animation when the page is loaded
+window.onload = animateText;

@@ -47,13 +47,14 @@ a {
     padding: 1.5rem 1rem;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     z-index: 6;
+    /* border: 1px solid red; */
 }
 
 #logo {
     display: flex;
     min-width: 110px;
     height: 30px;
-    border: 2px solid #42446E;
+    border: 1px solid #757575;
 }
 
 #logo #initial-logo {
@@ -61,7 +62,8 @@ a {
     align-items: center;
     justify-content: center;
     min-width: 30px;
-    color: #42446E;
+    color: #fff;
+    background-color: #757575;
     font-weight: bold;
 }
 
@@ -70,8 +72,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #42446E;
-    color: #fff;
+    background-color: transparent;
+    color: #757575;
 }
 
 #nav-container {
@@ -294,7 +296,7 @@ a {
     margin-bottom: 96px;
 }
 
-#projects-list {
+#project-list {
     display: flex;
     justify-content: center;
     gap: 37px;
@@ -304,28 +306,27 @@ a {
 .project {
     display: flex;
     align-items: end;
-    width: 375px;
-    height: 567px;
+    width: 384px;
+    height: 512px;
     border: 1px solid black;
     border-radius: 20px;
-    border: 10px solid black;
+    border: 20px solid black;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 40px;
-    background-image: url("https://i.postimg.cc/yNhjQv9L/screencapture-127-0-0-1-5501-index-html-2023-08-29-11-31-44.png");
     background-position: center;
     background-size: cover;
-   
+
     overflow: hidden;
     transition: box-shadow 0.3s ease-in-out;
 }
 
 .container-project {
+    width: 100%;
     height: 60%;
     padding: 1.75rem;
     bottom: 0;
     background-color: #fff;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 0px 10px 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+
 
     transform: translateY(100%);
     transition: transform 0.5s ease-out;
@@ -377,6 +378,7 @@ a {
     text-decoration: dotted;
     color: #000;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .container-project .links-project i:not(:last-child) {
