@@ -40,6 +40,78 @@ const person = {
         }
     ],
 
+    stack: [
+        {
+            name: "React",
+            version: "",
+            level: "inciante",
+            logo: "react.svg",
+        },
+
+        {
+            name: "Java Script",
+            version: "e6+",
+            level: "intermediario",
+            logo: "javascript.svg",
+        },
+
+        {
+            name: "HTML",
+            version: "5",
+            level: "intermediario",
+            logo: "html.svg",
+        },
+
+        {
+            name: "CSS",
+            version: "3",
+            level: "intermediario",
+            logo: "css.svg",
+        },
+
+        {
+            name: "Bootstrap",
+            version: "5",
+            level: "inciante",
+            logo: "bootstrap.svg",
+        },
+
+        {
+            name: "Java",
+            version: "17",
+            level: "iniciante",
+            logo: "java.svg",
+        },
+
+        {
+            name: "Vite",
+            version: "",
+            level: "iniciante",
+            logo: "vite.svg",
+        },
+
+        {
+            name: "Visual Studio Code",
+            version: "",
+            level: "iniciante",
+            logo: "vscode.svg",
+        },
+
+        {
+            name: "Eclipse",
+            version: "",
+            level: "iniciante",
+            logo: "eclipse.svg",
+        },
+
+        {
+            name: "GitHub",
+            version: "",
+            level: "iniciante",
+            logo: "gitbub.svg",
+        }
+    ],
+
     projects: [
         {
             id: 1,
@@ -51,6 +123,25 @@ const person = {
             linkRepository: "https://i.postimg.cc/1XLr9Nr5/2-1.png"
         },
 
+        {
+            id: 2,
+            name: "Todo Paper",
+            stacks: "HTML5, CSS, Java Script",
+            image: "https://i.postimg.cc/Tw9f7WFf/to-do-paper-filtro-de-tarefas.png",
+            description: "O Paper Notes: Um aplicativo web para criar notas de texto de forma simples e moderna!",
+            linkPreview: "https://todo-paper.vercel.app/",
+            linkRepository: "https://github.com/Tiago-Costa-s/todo_paper"
+        },
+
+        {
+            id: 2,
+            name: "Todo Paper",
+            stacks: "HTML5, CSS, Java Script",
+            image: "https://i.postimg.cc/Tw9f7WFf/to-do-paper-filtro-de-tarefas.png",
+            description: "O Paper Notes: Um aplicativo web para criar notas de texto de forma simples e moderna!",
+            linkPreview: "https://todo-paper.vercel.app/",
+            linkRepository: "https://github.com/Tiago-Costa-s/todo_paper"
+        },
         {
             id: 2,
             name: "Todo Paper",
@@ -150,7 +241,7 @@ const projectsResume = person.projects;
 projectsResume.forEach((project) => {
 
     const projectElement = document.createElement("div");
-    projectElement.style.backgroundImage  = `url(${project.image})`;
+    projectElement.style.backgroundImage = `url(${project.image})`;
     projectElement.classList.add("project");
 
     const containerProjectELement = document.createElement("div");
@@ -242,4 +333,27 @@ projectsResume.forEach((project) => {
 // }
 
 // Trigger the animation when the page is loaded
-window.onload = animateText;
+// window.onload = animateText;
+
+
+
+// Seletores
+const burgerMenu = document.getElementById("#burger-menu");
+const navMobile = document.querySelector(".container-nav-mobile");
+
+// Function
+function burgerMenuHide() {
+    let containerNavMobile = document.querySelector(".container-nav-mobile ");
+    containerNavMobile.classList.toggle("hide");
+};
+
+
+// Eventos
+burgerMenu.addEventListener("click", () => {
+    burgerMenuHide();
+});
+
+
+// navMobile.addEventListener("click", () => {
+//     burgerMenuHide()
+// });
