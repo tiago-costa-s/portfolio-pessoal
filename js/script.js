@@ -45,10 +45,10 @@ const person = {
             id: 1,
             name: "Paper Notes",
             stacks: "HTML5, CSS, Java Script",
-            image: "https://i.postimg.cc/MpwGDWg2/2-1.png",
+            image: "https://i.postimg.cc/gjw1S80Y/2-1.png",
             description: "O Paper Notes: Um aplicativo web para criar notas de texto de forma simples e moderna!",
             linkPreview: "https://paper-notes.vercel.app/",
-            linkRepository: "https://github.com/tiago-costa-s/paper-notes"
+            linkRepository: "https://i.postimg.cc/1XLr9Nr5/2-1.png"
         },
 
         {
@@ -226,37 +226,20 @@ projectsResume.forEach((project) => {
 
 
 
-//  <div class="project">
-//     <div class="container-project">
+// const text = `Olá</span> meu nome é Tiago Costa e um sou um Desenvolvedor front end`;
+// const titleElement = document.getElementById("title");
 
-//         <p class="name">Paper Note</p>
-//         <div class="description">
-//             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sit suscipit
-//                 consequuntur minus delectus aliquam fugiat nam recusandae.</p>
-//         </div>
-//         <p class="stack">Tech stack n <span> HTML5, CSS e JavaScrip</span></p>
-//         <div class="links-project">
-//             <a href="" target="_blank"><i class="bi bi-link-45deg"></i><span>Like Preview</span></a>
-//             <a href="" target="_blank"><i class="bi bi-github"></i><span>View Code</span></a>
-//         </div>
-//     </div>
-// </div> 
+// function typeText(index) {
+//     titleElement.innerText = text.slice(0, index);
+// }
 
-
-const text = `Olá</span> meu nome é Tiago Costa e um sou um Desenvolvedor front end`;
-const titleElement = document.getElementById("title");
-
-function typeText(index) {
-    titleElement.innerText = text.slice(0, index);
-}
-
-function animateText() {
-    for (let i = 0; i <= text.length; i++) {
-        setTimeout(() => {
-            typeText(i);
-        }, i * 100); // 100ms delay for each letter
-    }
-}
+// function animateText() {
+//     for (let i = 0; i <= text.length; i++) {
+//         setTimeout(() => {
+//             typeText(i);
+//         }, i * 100); // 100ms delay for each letter
+//     }
+// }
 
 // Trigger the animation when the page is loaded
 window.onload = animateText;

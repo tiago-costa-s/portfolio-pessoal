@@ -26,7 +26,7 @@ h3 {
 
 a {
     text-decoration: none;
-    color: #989898;
+    color: #666666;
 }
 
 #container {
@@ -54,7 +54,7 @@ a {
     display: flex;
     min-width: 110px;
     height: 30px;
-    border: 1px solid #757575;
+    border: 1px solid #42446E;
 }
 
 #logo #initial-logo {
@@ -63,7 +63,7 @@ a {
     justify-content: center;
     min-width: 30px;
     color: #fff;
-    background-color: #757575;
+    background-color: #42446E;
     font-weight: bold;
 }
 
@@ -73,7 +73,7 @@ a {
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    color: #757575;
+    color: #42446E;
 }
 
 #nav-container {
@@ -108,7 +108,7 @@ a {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    min-height: calc(100vh - 0px);
+    min-height: 100vh;
     padding: 5rem 0;
 }
 
@@ -385,27 +385,45 @@ a {
     margin-right: 10px;
 }
 
-@keyframes exemplo {
-    from {
-        background: linear-gradient(to right, #1199d3, #be0d8c);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-
-
-    to {
-        background: linear-gradient(to right, #13b0f5, #e70faa);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-
+#contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
 }
 
-h4 {
-    font-size: 5rem;
-    animation-name: exemplo;
-    animation-duration: 5s;
-    animation-timing-function: linear infinite;
+#contacts h4 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#contacts #contact-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#contacts i {
+    font-size: 1.5rem;
+    color: #42446E;
+}
+
+#footer {
+    width: 100%;
+    /* min-height: 250px; */
+    /* background-color: #e5f0e6; */
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    border-top: 1px solid #666666;
+}
+
+#footer #info-footer {
+
+    text-align: center;
 }
