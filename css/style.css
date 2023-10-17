@@ -323,7 +323,7 @@ a {
     margin-bottom: 96px;
 }
 
-.stack-container {
+#my-stack .stack-container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -340,9 +340,6 @@ a {
     padding: 5rem 0;
 }
 
-#projects .description-section {
-    margin-bottom: 96px;
-}
 
 #project-list {
     display: flex;
@@ -489,8 +486,12 @@ a {
 
 /* Mobile */
 @media (max-width: 480px) {
+    h2 {
+        font-size: 2rem;
+    }
+
     h3 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     #header {
@@ -549,6 +550,10 @@ a {
 
     /* sobre  min*/
     /* job */
+    #aboult {
+        padding: 0 1rem;
+    }
+
     .aboult-containers .regime {
         display: none;
     }
@@ -575,6 +580,18 @@ a {
     }
 
     /* Minha Stack */
+    #my-stack {
+        padding: 0 1rem;
+    }
+
+    #my-stack .stack-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+
     .description-section {
         font-size: 1.2rem;
         margin-bottom: 46px;
@@ -586,8 +603,8 @@ a {
 
     /* Projetos */
 
-    .container-project {    
+    .container-project {
         height: 75%;
-    
+
     }
 }
