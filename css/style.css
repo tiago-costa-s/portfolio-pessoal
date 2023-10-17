@@ -513,11 +513,12 @@ a {
     #nav-mobile {}
 
     #container {
-        padding: 0 .8rem;
+        padding: 0 .0rem;
     }
 
     #home {
-        padding-top: 6rem;
+        width: 100%;
+        /* padding-top: 6rem; */
     }
 
     #home #title {
@@ -586,7 +587,7 @@ a {
     /* Projetos */
 
     .container-project {    
-        height: 70%;
+        height: 75%;
     
     }
 }
