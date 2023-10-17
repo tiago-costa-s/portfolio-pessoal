@@ -520,7 +520,7 @@ a {
     }
 
     #home #title {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 
     #home img {
@@ -528,8 +528,8 @@ a {
     }
 
     #home #imageProgileMobile {
-        max-width: 200px;
-        min-height: 200px;
+        max-width: 180px;
+        min-height: 180px;
         display: block;
         margin-bottom: 2rem;
     }
@@ -546,4 +546,8 @@ a {
         justify-content: space-around;
     }
 
+    /* sobre */
+    .aboult-containers {
+        text-align: justify;
+    }
 }
