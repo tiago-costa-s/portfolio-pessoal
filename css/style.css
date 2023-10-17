@@ -146,6 +146,7 @@ a {
     font-size: 1.5rem;
     transition: .5s;
 }
+
 #nav-mobile a:active {
     color: var(--blue-gray);
 }
@@ -163,8 +164,6 @@ a {
 
 #home #my-presentation {
     width: 100%;
-
-    background-color: rgb(232, 232, 251);
 }
 
 #home #title {
@@ -195,6 +194,10 @@ a {
     border: 10px solid transparent;
     background-image: linear-gradient(80deg, rgba(231, 15, 170, 1), rgba(0, 192, 253, 1));
     overflow: hidden;
+}
+
+#home #imageProgileMobile {
+    display: none;
 }
 
 #social-media {
@@ -348,7 +351,7 @@ a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 37px;
+    gap: 50px;
     width: 100%;
 }
 
@@ -494,6 +497,7 @@ a {
         align-items: end;
         padding: 0 .5rem;
         min-height: 50px;
+        /* display: none; */
     }
 
     #nav {
@@ -508,6 +512,38 @@ a {
     #nav-mobile {}
 
     #container {
-        padding: 0;
+        padding: 0 .5rem;
     }
+
+    #home {
+        padding-top: 6rem;
+    }
+
+    #home #title {
+        font-size: 2.5rem;
+    }
+
+    #home img {
+        display: none;
+    }
+
+    #home #imageProgileMobile {
+        max-width: 200px;
+        min-height: 200px;
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+
+    #my-presentation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #social-media {
+        justify-content: space-around;
+    }
+
 }
