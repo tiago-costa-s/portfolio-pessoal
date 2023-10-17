@@ -602,6 +602,9 @@ a {
     }
 
     /* Projetos */
+    #projects {
+        padding: 5rem 1rem;
+    }
 
     .container-project {
         height: 75%;
