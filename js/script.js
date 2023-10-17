@@ -317,12 +317,12 @@ projectsResume.forEach((project) => {
 
 
 
-// const text = `Olá</span> meu nome é Tiago Costa e um sou um Desenvolvedor front end`;
-// const titleElement = document.getElementById("title");
+const text = `Olá</span> meu nome é Tiago Costa e um sou um Desenvolvedor front end`;
+const titleElement = document.getElementById("title");
 
-// function typeText(index) {
-//     titleElement.innerText = text.slice(0, index);
-// }
+function typeText(index) {
+    titleElement.innerText = text.slice(0, index);
+}
 
 // function animateText() {
 //     for (let i = 0; i <= text.length; i++) {
@@ -354,6 +354,6 @@ burgerMenu.addEventListener("click", () => {
 });
 
 
-// navMobile.addEventListener("click", () => {
-//     burgerMenuHide()
-// });
+navMobile.addEventListener("click", () => {
+    burgerMenuHide()
+});
