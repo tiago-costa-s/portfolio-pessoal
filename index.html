@@ -20,12 +20,13 @@
 <body>
     <div id="container">
         <header id="header">
-            <div id="logo">
-                <div id="initial-logo">tc</div>
-                <div id="name-logo">c o s t a</div>
-            </div>
+            <!-- navegação -->
             <div id="nav-container">
-                <!-- navegação -->
+                <div id="logo">
+                    <div id="initial-logo">tc</div>
+                    <div id="name-logo">c o s t a</div>
+                </div>
+
                 <nav id="nav">
                     <a href="#home">Home</a>
                     <a href="#aboult">Sobre mim</a>
@@ -33,7 +34,21 @@
                     <a href="#projects">Projetos</a>
                     <a href="#contacts">Contatos</a>
                 </nav>
+
+                <i class="bi bi-list" id="#burger-menu"></i>
             </div>
+
+            <div class="container-nav-mobile hide">
+                <nav id="nav-mobile">
+                    <a href="#home">Home</a>
+                    <a href="#aboult">Sobre mim</a>
+                    <a href="#my-stack">Tech Stack</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#contacts">Contatos</a>
+                </nav>
+            </div>
+
+
         </header>
 
         <!-- Home -->
@@ -46,19 +61,21 @@
                     <span>Eu sou</span>
                     <span>Desenvolvedor</span>
                 </h1>
-                <img src="/assets/images/perfil2.png" alt="tiago">
-            </div>
-            <div id="social-media">
-                <a href="https://github.com/tiago-costa-s" target="_blank"><button><i
-                            class="bi bi-github"></i>Github</button></a>
+                <img id="imageProgileMobile" src="/assets/images/perfil2.png" alt="tiago">
 
-                <a href="https://www.linkedin.com/in/tiago-costa-s/" target="_blank"> <button><i
-                            class="bi bi-linkedin"></i>Linkedin</button></a>
+                <div id="social-media">
+                    <a href="https://github.com/tiago-costa-s" target="_blank"><button><i
+                                class="bi bi-github"></i>Github</button></a>
+
+                    <a href="https://www.linkedin.com/in/tiago-costa-s/" target="_blank"> <button><i
+                                class="bi bi-linkedin"></i>Linkedin</button></a>
+                </div>
             </div>
+            <img src="/assets/images/perfil2.png" alt="tiago">
         </section>
 
         <!-- sobre min -->
-        <section id="aboult">
+        <!-- <section id="aboult">
             <article class="aboult-containers" id="about-me">
                 <h3>Sobre min</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nulla nihil quisquam molestiae,
@@ -84,27 +101,26 @@
                     </div>
                 </div>
             </article>
-        </section>
+        </section> -->
         <!-- My Stack -->
-        <section id="my-stack">
-            <h2>My Tech Stack</h2>
+        <!-- <section id="my-stack">
+            <h2>Minha Stack de Tecnologia</h2>
             <p class="description-section ">Tecnologias com as quais tenho trabalhado recentemente</p>
             <div class="stack-container">
                 <img src="./assets/images/icons/stack/react.svg" alt="react">
-                <img src="./assets/images/icons/stack/file-type-js-official.svg" alt="javascript">
-                <img src="./assets/images/icons/stack/file-type-html.svg" alt="html">
-                <img src="./assets/images/icons/stack/file-type-css.svg" alt="css">
+                <img src="./assets/images/icons/stack/javascript.svg" alt="javascript">
+                <img src="./assets/images/icons/stack/html.svg" alt="html">
+                <img src="./assets/images/icons/stack/css.svg" alt="css">
                 <img src="./assets/images/icons/stack/bootstrap.svg" alt="bootstrap">
                 <img src="./assets/images/icons/stack/java.svg" alt="java">
-                <img src="./assets/images/icons/stack/mysql.svg" alt="mysql">
-                <img src="./assets/images/icons/stack/file-type-vite.svg" alt="vite">
-                <img src="./assets/images/icons/stack/file-type-vscode.svg" alt="vscode">
+
+                <img src="./assets/images/icons/stack/github.svg" alt="github">
+                <img src="./assets/images/icons/stack/vscode.svg" alt="vscode">
                 <img src="./assets/images/icons/stack/eclipse.svg" alt="eclipse">
-                <img src="./assets/images/icons/stack/github-fill.svg" alt="github">
             </div>
-        </section>
+        </section> -->
         <!-- projetos -->
-        <section id="projects">
+        <!-- <section id="projects">
             <h2>Projetos</h2>
             <p class="description-section ">Coisas que construí até agora</p>
             <div id="project-list"></div>
@@ -116,7 +132,7 @@
                 <a href="https://www.linkedin.com/in/tiago-costa-s/" target="_blank"><i class="bi bi-linkedin"></i></a>
                 <a href="https://api.whatsapp.com/send/?phone=5531991932470&text=Ol%C3%A1+Tiago+!+Eu+gostaria+de+conversar+com+voc%C3%AA.&type=phone_number&app_absent=0"
                     target="_blank"><i class="bi bi-whatsapp"></i></a>
-                <a href="" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+                <a href="mailto:tiago-costa-s@outlook.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
 
             </div>
         </section>
@@ -124,8 +140,8 @@
             <div id="info-footer">
                 <p>&copy Copyright 2023</p>
             </div>
-        </footer>
-    </div>
+        </footer> -->
+        <!-- </div> -->
 </body>
 
 </html>
