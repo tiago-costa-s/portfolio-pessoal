@@ -127,31 +127,41 @@ const person = {
             id: 2,
             name: "Todo Paper",
             stacks: "HTML5, CSS, Java Script",
-            image: "https://i.postimg.cc/Tw9f7WFf/to-do-paper-filtro-de-tarefas.png",
+            image: "https://i.postimg.cc/6qQYNmQS/todolist.png",
             description: "O Paper Notes: Um aplicativo web para criar notas de texto de forma simples e moderna!",
             linkPreview: "https://todo-paper.vercel.app/",
             linkRepository: "https://github.com/Tiago-Costa-s/todo_paper"
         },
 
         {
-            id: 2,
-            name: "Todo Paper",
+            id: 3,
+            name: "KM360",
             stacks: "HTML5, CSS, Java Script",
-            image: "https://i.postimg.cc/Tw9f7WFf/to-do-paper-filtro-de-tarefas.png",
+            image: "https://i.postimg.cc/dtSDxtpb/Desktop.png",
             description: "O Paper Notes: Um aplicativo web para criar notas de texto de forma simples e moderna!",
-            linkPreview: "https://todo-paper.vercel.app/",
-            linkRepository: "https://github.com/Tiago-Costa-s/todo_paper"
-        },
-        {
-            id: 2,
-            name: "Todo Paper",
-            stacks: "HTML5, CSS, Java Script",
-            image: "https://i.postimg.cc/Tw9f7WFf/to-do-paper-filtro-de-tarefas.png",
-            description: "O Paper Notes: Um aplicativo web para criar notas de texto de forma simples e moderna!",
-            linkPreview: "https://todo-paper.vercel.app/",
-            linkRepository: "https://github.com/Tiago-Costa-s/todo_paper"
+            linkPreview: "https://km360.netlify.app/",
+            linkRepository: "https://github.com/Tiago-Costa-s/km360"
         },
 
+        {
+            id: 4,
+            name: "Calculadora IMC ",
+            stacks: "HTML5, CSS, Java Script",
+            image: "https://i.postimg.cc/G3PT1M7G/calc-imc-advanced-0.png",
+            description: "A calculadora: E um programa responsavel por calcular o índice de massa corporal(IMC) de uma pessoa.",
+            linkPreview: " https://km360.netlify.app/",
+            linkRepository: "https://github.com/Tiago-Costa-s/km360"
+        },
+
+        {
+            id: 5,
+            name: "Law Office ",
+            stacks: "HTML5, CSS, Java Script",
+            image: "https://i.postimg.cc/d0M5bDFb/screencapture-escritorio-advocacia-netlify-app-2023-10-18-07-45-04.png",
+            description: "Essa e uma langing page de um escritorio de advocacia",
+            linkPreview: "https://i.postimg.cc/K8dJLjs9/escritorio-advocacia-netlify-app.png",
+            linkRepository: "https://github.com/tiago-costa-s/Escritorio-Advocacia"
+        }
     ]
 }
 
