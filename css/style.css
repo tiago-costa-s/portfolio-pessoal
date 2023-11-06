@@ -315,7 +315,6 @@ a {
     padding: 5rem 0;
 }
 
-
 .description-section {
     text-align: center;
     font-size: 2rem;
@@ -482,7 +481,30 @@ a {
 @media ((min-width: 768px) and (max-width: 991px)) {}
 
 /* Extra small devices */
-@media ((min-width: 481px) and (max-width: 767px)) {}
+@media ((min-width: 481px) and (max-width: 767px)) {
+    #header {
+        flex-direction: column;
+        align-items: end;
+        padding: 0 .5rem;
+        min-height: 50px;
+        /* display: none; */
+    }
+
+    #nav {
+        display: none;
+    }
+
+    #nav-container .bi-list {
+        display: block;
+        padding: 0;
+    }
+
+    #nav-mobile {}
+
+    #container {
+        padding: 0 .0rem;
+    }
+}
 
 /* Mobile */
 @media (max-width: 480px) {

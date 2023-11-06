@@ -138,7 +138,7 @@ const person = {
             name: "KM360",
             stacks: "HTML5, CSS, Java Script",
             image: "https://i.postimg.cc/dtSDxtpb/Desktop.png",
-            description: "O Paper Notes: Um aplicativo web para criar notas de texto de forma simples e moderna!",
+            description: "O To do Paper: Um aplicativo web para criar notas de texto de forma simples e moderna!",
             linkPreview: "https://km360.netlify.app/",
             linkRepository: "https://github.com/Tiago-Costa-s/km360"
         },
@@ -158,7 +158,7 @@ const person = {
             name: "Law Office ",
             stacks: "HTML5, CSS, Java Script",
             image: "https://i.postimg.cc/XvJhwLdn/escritorio-advocacia-netlify-app.png",
-            description: "Essa e uma langing page de um escritorio de advocacia",
+            description: "O Law Office: E uma langing page de um escritorio de advocacia",
             linkPreview: "https://i.postimg.cc/K8dJLjs9/escritorio-advocacia-netlify-app.png",
             linkRepository: "https://github.com/tiago-costa-s/Escritorio-Advocacia"
         }
