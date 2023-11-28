@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tc-costa</title>
+    <title>Portifólio - Tiago Costa</title>
     <!-- Styles -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Scripts -->
@@ -19,7 +19,7 @@
 
 <body>
     <div id="container">
-        <header id="header">
+        <header class="" id="header">
             <!-- navegação -->
             <div id="nav-container">
                 <div id="logo">
@@ -47,103 +47,123 @@
                     <a href="#contacts">Contatos</a>
                 </nav>
             </div>
-
-
         </header>
 
-        <!-- Home -->
-        <section id="home">
-            <div id="my-presentation">
-                <h1 id="title">
-                    <span>Olá,</span>
-                    <span>Meu nome e</span>
-                    <span id="name">Tiago Costa</span>
-                    <span>Eu sou</span>
-                    <span>Desenvolvedor</span>
-                </h1>
+        <!-- home -->
+        <div class="leazy-section">
+            <section class="leazy-section" id="home">
+                <div id="my-presentation">
+                    <h1 id="title">
+                        <span>Olá,</span>
+                        <span>Meu nome e</span>
+                        <span id="name">Tiago Costa</span>
+                        <span>Eu sou</span>
+                        <span>Desenvolvedor</span>
+                    </h1>
 
-                <img id="imageProgileMobile" src="/assets/images/perfil2.png" alt="tiago">
+                    <img id="imageProgileMobile" src="/assets/images/perfil2.png" alt="tiago">
 
-                <div id="social-media">
-                    <a href="https://github.com/tiago-costa-s" target="_blank"><button><i
-                                class="bi bi-github"></i>Github</button></a>
+                    <div id="social-media">
+                        <a href="https://github.com/tiago-costa-s" target="_blank" rel="noopener noreferrer"><button><i
+                                    class="bi bi-github"></i>Github</button></a>
 
-                    <a href="https://www.linkedin.com/in/tiago-costa-s/" target="_blank"> <button><i
-                                class="bi bi-linkedin"></i>Linkedin</button></a>
-                </div>
-            </div>
-            <img src="/assets/images/perfil2.png" alt="tiago">
-        </section>
-
-        <!-- Sobre min -->
-        <section id="aboult">
-            <article class="aboult-containers" id="about-me">
-                <h3>Sobre min</h3>
-                <p>Oi, eu sou Tiago Costa, um entusiasta do desenvolvimento web dedicado a criar experiências digitais
-                    incríveis. Neste espaço, você encontrará uma amostra do meu trabalho e das minhas habilidades.</p>
-                <p>Eu sou apaixonado por transformar ideias em código e acredito na importância de criar interfaces
-                    intuitivas e visualmente atraentes. Cada projeto é uma oportunidade de aprendizado e aprimoramento.
-                </p>
-            </article>
-
-            <article class="aboult-containers" id="professional-experience">
-                <h3>Experiência Profissional</h3>
-            </article>
-
-            <article class="aboult-containers" id="academic-education">
-                <h3>Formação Academica</h3>
-                <div class="jobs">
-                    <header>
-                        <p class="title">Analise e Desenvolvimento de Sistemas</p>
-                        <p class="regime">Presencial</p>
-                    </header>
-                    <div class="info">
-                        <p class="company"><i class="bi bi-building"></i>Faculdade UNA</p>
-                        <p class="city"><i class="bi bi-geo-alt"></i>Belo Horizonte</p>
-                        <p class="period"><i class="bi bi-calendar3"></i>Jan 2020 - Jul 2022</p>
+                        <a href="https://www.linkedin.com/in/tiago-costa-s/" target="_blank" rel="noopener noreferrer">
+                            <button><i class="bi bi-linkedin"></i>Linkedin</button></a>
                     </div>
                 </div>
-            </article>
-        </section>
-        <!-- My Stack -->
-        <section id="my-stack">
-            <h2>Minha Stack de Tecnologia</h2>
-            <p class="description-section ">Tecnologias com as quais tenho trabalhado recentemente</p>
-            <div class="stack-container">
-                <img src="./assets/images/icons/stack/react.svg" alt="react">
-                <img src="./assets/images/icons/stack/javascript.svg" alt="javascript">
-                <img src="./assets/images/icons/stack/html.svg" alt="html">
-                <img src="./assets/images/icons/stack/css.svg" alt="css">
-                <img src="./assets/images/icons/stack/bootstrap.svg" alt="bootstrap">
-                <img src="./assets/images/icons/stack/java.svg" alt="java">
+                <img src="/assets/images/perfil2.png" alt="tiago" loading="lazy">
+            </section>
+        </div>
 
-                <img src="./assets/images/icons/stack/github.svg" alt="github">
-                <img src="./assets/images/icons/stack/vscode.svg" alt="vscode">
-                <img src="./assets/images/icons/stack/eclipse.svg" alt="eclipse">
-            </div>
-        </section>
+
+        <!-- sobre min -->
+        <div class="leazy-section">
+            <section class="leazy-section" id="aboult">
+                <article class="aboult-containers" id="about-me">
+                    <h3>Sobre min</h3>
+                    <p>Oi, eu sou Tiago Costa, um entusiasta do desenvolvimento web dedicado a criar experiências
+                        digitais
+                        incríveis. Neste espaço, você encontrará uma amostra do meu trabalho e das minhas habilidades.
+                    </p>
+                    <p>Eu sou apaixonado por transformar ideias em código e acredito na importância de criar interfaces
+                        intuitivas e visualmente atraentes. Cada projeto é uma oportunidade de aprendizado e
+                        aprimoramento.
+                    </p>
+                </article>
+
+                <article class="aboult-containers" id="professional-experience">
+                    <h3>Experiência Profissional</h3>
+                </article>
+
+                <article class="aboult-containers" id="academic-education">
+                    <h3>Formação Academica</h3>
+                    <div class="jobs">
+                        <header>
+                            <p class="title">Analise e Desenvolvimento de Sistemas</p>
+                            <p class="regime">Presencial</p>
+                        </header>
+                        <div class="info">
+                            <p class="company"><i class="bi bi-building"></i>Faculdade UNA</p>
+                            <p class="city"><i class="bi bi-geo-alt"></i>Belo Horizonte</p>
+                            <p class="period"><i class="bi bi-calendar3"></i>Jan 2020 - Jul 2022</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <!-- my stack -->
+        <div class="leazy-section">
+            <section class="leazy-section" id="my-stack">
+                <h2>Minha Stack de Tecnologia</h2>
+                <p class="description-section ">Tecnologias com as quais tenho trabalhado recentemente</p>
+                <div class="stack-container">
+                    <img src="./assets/images/icons/stackPng/reactjs.png" alt="react" loading="lazy">
+                    <img src="./assets/images/icons/stackPng/javascript.png" alt="javascript" loading="lazy">
+                    <img src="./assets/images/icons/stackPng/html.png" alt="html" loading="lazy">
+                    <img src="./assets/images/icons/stackPng/css.png" alt="css" loading="lazy">
+                    <img src="./assets/images/icons/stackPng/bootstrap.png" alt="bootstrap"loading="lazy">
+                    <img src="./assets/images/icons/stackPng/java.png" alt="java" loading="lazy">
+                    <img src="./assets/images/icons/stackPng/github.png" alt="github" loading="lazy">
+                    <img src="./assets/images/icons/stackPng/vscode.png" alt="vscode" loading="lazy">
+                    <img src="./assets/images/icons/stackPng/eclipse_ide.png" alt="eclipse" loading="lazy">
+                    <img src="./assets/images/icons/stackPng/intellij_ide.png" alt="intellij" loading="lazy">
+                </div>
+            </section>
+        </div>
+
         <!-- projetos -->
-        <section id="projects">
-            <h2>Projetos</h2>
-            <p class="description-section ">Coisas que construí até agora</p>
-            <div id="project-list"></div>
+        <div class="leazy-section">
+            <section id="projects">
+                <h2>Projetos</h2>
+                <p class="description-section ">Coisas que construí até agora</p>
+                <div id="project-list"></div>
+            </section>
+        </div>
 
-        </section>
-        <section id="contacts">
-            <h4>Contato</h4>
-            <div id="contact-container">
-                <a href="https://www.linkedin.com/in/tiago-costa-s/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                <a href="https://api.whatsapp.com/send/?phone=5531991932470&text=Ol%C3%A1+Tiago+!+Eu+gostaria+de+conversar+com+voc%C3%AA.&type=phone_number&app_absent=0"
-                    target="_blank"><i class="bi bi-whatsapp"></i></a>
-                <a href="mailto:tiago-costa-s@outlook.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+        <!-- contatos -->
+        <div class="leazy-section">
+            <section id="contacts">
+                <h4>Contato</h4>
+                <div id="contact-container">
+                    <a href="https://www.linkedin.com/in/tiago-costa-s/" target="_blank" rel="noopener noreferrer"><i
+                            class="bi bi-linkedin"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=5531991932470&text=Ol%C3%A1+Tiago+!+Eu+gostaria+de+conversar+com+voc%C3%AA.&type=phone_number&app_absent=0"
+                        target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+                    <a href="mailto:tiago-costa-s@outlook.com" target="_blank" rel="noopener noreferrer"><i
+                            class="bi bi-envelope-fill"></i></a>
 
-            </div>
-        </section>
-        <footer id="footer">
+                </div>
+            </section>
+        </div>
+
+        <!-- footer -->
+        <footer class="leazy-section" id="footer">
             <div id="info-footer">
                 <p>&copy Copyright 2023</p>
             </div>
         </footer>
+
     </div>
 </body>
 

@@ -120,7 +120,7 @@ const person = {
             image: "https://i.postimg.cc/gjw1S80Y/2-1.png",
             description: "O Paper Notes: Um aplicativo web para criar notas de texto de forma simples e moderna!",
             linkPreview: "https://paper-notes.vercel.app/",
-            linkRepository: "https://i.postimg.cc/1XLr9Nr5/2-1.png"
+            linkRepository: "https://github.com/tiago-costa-s/paper-notes"
         },
 
         {
@@ -138,7 +138,7 @@ const person = {
             name: "KM360",
             stacks: "HTML5, CSS, Java Script",
             image: "https://i.postimg.cc/dtSDxtpb/Desktop.png",
-            description: "O Paper Notes: Um aplicativo web para criar notas de texto de forma simples e moderna!",
+            description: "O To do Paper: Um aplicativo web para criar notas de texto de forma simples e moderna!",
             linkPreview: "https://km360.netlify.app/",
             linkRepository: "https://github.com/Tiago-Costa-s/km360"
         },
@@ -158,7 +158,7 @@ const person = {
             name: "Law Office ",
             stacks: "HTML5, CSS, Java Script",
             image: "https://i.postimg.cc/XvJhwLdn/escritorio-advocacia-netlify-app.png",
-            description: "Essa e uma langing page de um escritorio de advocacia",
+            description: "O Law Office: E uma langing page de um escritorio de advocacia",
             linkPreview: "https://i.postimg.cc/K8dJLjs9/escritorio-advocacia-netlify-app.png",
             linkRepository: "https://github.com/tiago-costa-s/Escritorio-Advocacia"
         }
@@ -239,11 +239,10 @@ const createProfessionalExperience = () => {
 
         professionExperience.appendChild(jobsElement);
     });
+
 };
 
 createProfessionalExperience();
-
-
 
 const projectsListElement = document.querySelector("#project-list");
 const projectsResume = person.projects;
@@ -292,6 +291,7 @@ projectsResume.forEach((project) => {
     previewElement.getElementsByClassName("previewLink");
     previewElement.href = `${project.linkPreview}`;
     previewElement.target = "_blank";
+    previewElement.rel = "noopener noreferrer";
     // icone link
     const iconePreviewElement = document.createElement("i");
     iconePreviewElement.classList.add("bi", "bi-link-45deg");
@@ -301,7 +301,6 @@ projectsResume.forEach((project) => {
     spanPreview.textContent = "Link Preview"
     previewElement.appendChild(spanPreview);
     linksProjectElement.appendChild(previewElement);
-
 
     // link github
     const githubElement = document.createElement("a");
@@ -324,46 +323,49 @@ projectsResume.forEach((project) => {
     projectsListElement.appendChild(projectElement);
 });
 
-
-
-
-const text = `Olá</span> meu nome é Tiago Costa e um sou um Desenvolvedor front end`;
-const titleElement = document.getElementById("title");
-
-function typeText(index) {
-    titleElement.innerText = text.slice(0, index);
-}
-
-// function animateText() {
-//     for (let i = 0; i <= text.length; i++) {
-//         setTimeout(() => {
-//             typeText(i);
-//         }, i * 100); // 100ms delay for each letter
-//     }
-// }
-
-// // Trigger the animation when the page is loaded
-// window.onload = animateText;
-
-
-
 // Seletores
 const burgerMenu = document.getElementById("#burger-menu");
 const navMobile = document.querySelector(".container-nav-mobile");
+const containersLeazy = document.querySelectorAll(".containers-leazy");
+const containerLeazy = document.querySelector(".containers-leazy");
 
 // Function
 function burgerMenuHide() {
     let containerNavMobile = document.querySelector(".container-nav-mobile ");
     containerNavMobile.classList.toggle("hide");
+
 };
 
+function lazyLoad() {
+    // Obtém todas as seções preguiçosas
+    const lazySections = document.querySelectorAll('.leazy-section');
+
+    lazySections.forEach(section => {
+        // Verifica se a seção está no viewport
+        if (section.getBoundingClientRect().top < window.innerHeight && !section.classList.contains('loaded')) {
+            // Adiciona a classe 'loaded' para evitar o carregamento repetido
+            section.classList.add('loaded');
+            // Carrega qualquer conteúdo adicional ou realiza ações específicas da seção, se necessário
+        }        
+    });
+
+}
+
+// Adiciona um evento de rolagem para carregar seções à medida que a página é rolada
+window.addEventListener('scroll', lazyLoad);
+
+// Carrega as seções ao carregar a página
+document.addEventListener('DOMContentLoaded', lazyLoad);
 
 // Eventos
 burgerMenu.addEventListener("click", () => {
+
     burgerMenuHide();
+
 });
 
-
 navMobile.addEventListener("click", () => {
-    burgerMenuHide()
+
+    burgerMenuHide();
+
 });
