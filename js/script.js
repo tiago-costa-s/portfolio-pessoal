@@ -292,6 +292,7 @@ projectsResume.forEach((project) => {
     previewElement.getElementsByClassName("previewLink");
     previewElement.href = `${project.linkPreview}`;
     previewElement.target = "_blank";
+    previewElement.rel = "noopener noreferrer";
     // icone link
     const iconePreviewElement = document.createElement("i");
     iconePreviewElement.classList.add("bi", "bi-link-45deg");
@@ -301,7 +302,6 @@ projectsResume.forEach((project) => {
     spanPreview.textContent = "Link Preview"
     previewElement.appendChild(spanPreview);
     linksProjectElement.appendChild(previewElement);
-
 
     // link github
     const githubElement = document.createElement("a");
@@ -324,38 +324,41 @@ projectsResume.forEach((project) => {
     projectsListElement.appendChild(projectElement);
 });
 
-
-
-
-const text = `Olá</span> meu nome é Tiago Costa e um sou um Desenvolvedor front end`;
-const titleElement = document.getElementById("title");
-
-function typeText(index) {
-    titleElement.innerText = text.slice(0, index);
-}
-
-// function animateText() {
-//     for (let i = 0; i <= text.length; i++) {
-//         setTimeout(() => {
-//             typeText(i);
-//         }, i * 100); // 100ms delay for each letter
-//     }
-// }
-
-// // Trigger the animation when the page is loaded
-// window.onload = animateText;
-
-
-
 // Seletores
 const burgerMenu = document.getElementById("#burger-menu");
 const navMobile = document.querySelector(".container-nav-mobile");
+const containersLeazy = document.querySelectorAll(".containers-leazy");
+const containerLeazy = document.querySelector(".containers-leazy");
+
+
 
 // Function
 function burgerMenuHide() {
     let containerNavMobile = document.querySelector(".container-nav-mobile ");
     containerNavMobile.classList.toggle("hide");
 };
+
+
+function lazyLoad() {
+    // Obtém todas as seções preguiçosas
+    const lazySections = document.querySelectorAll('.leazy-section');
+
+    lazySections.forEach(section => {
+        // Verifica se a seção está no viewport
+        if (section.getBoundingClientRect().top < window.innerHeight && !section.classList.contains('loaded')) {
+            // Adiciona a classe 'loaded' para evitar o carregamento repetido
+            section.classList.add('loaded');
+            // Carrega qualquer conteúdo adicional ou realiza ações específicas da seção, se necessário
+        }
+    });
+}
+
+// Adiciona um evento de rolagem para carregar seções à medida que a página é rolada
+window.addEventListener('scroll', lazyLoad);
+
+// Carrega as seções ao carregar a página
+document.addEventListener('DOMContentLoaded', lazyLoad);
+
 
 
 // Eventos
