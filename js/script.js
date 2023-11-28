@@ -120,7 +120,7 @@ const person = {
             image: "https://i.postimg.cc/gjw1S80Y/2-1.png",
             description: "O Paper Notes: Um aplicativo web para criar notas de texto de forma simples e moderna!",
             linkPreview: "https://paper-notes.vercel.app/",
-            linkRepository: "https://i.postimg.cc/1XLr9Nr5/2-1.png"
+            linkRepository: "https://github.com/tiago-costa-s/paper-notes"
         },
 
         {
@@ -239,11 +239,10 @@ const createProfessionalExperience = () => {
 
         professionExperience.appendChild(jobsElement);
     });
+
 };
 
 createProfessionalExperience();
-
-
 
 const projectsListElement = document.querySelector("#project-list");
 const projectsResume = person.projects;
@@ -330,14 +329,12 @@ const navMobile = document.querySelector(".container-nav-mobile");
 const containersLeazy = document.querySelectorAll(".containers-leazy");
 const containerLeazy = document.querySelector(".containers-leazy");
 
-
-
 // Function
 function burgerMenuHide() {
     let containerNavMobile = document.querySelector(".container-nav-mobile ");
     containerNavMobile.classList.toggle("hide");
-};
 
+};
 
 function lazyLoad() {
     // Obtém todas as seções preguiçosas
@@ -349,8 +346,9 @@ function lazyLoad() {
             // Adiciona a classe 'loaded' para evitar o carregamento repetido
             section.classList.add('loaded');
             // Carrega qualquer conteúdo adicional ou realiza ações específicas da seção, se necessário
-        }
+        }        
     });
+
 }
 
 // Adiciona um evento de rolagem para carregar seções à medida que a página é rolada
@@ -359,14 +357,15 @@ window.addEventListener('scroll', lazyLoad);
 // Carrega as seções ao carregar a página
 document.addEventListener('DOMContentLoaded', lazyLoad);
 
-
-
 // Eventos
 burgerMenu.addEventListener("click", () => {
+
     burgerMenuHide();
+
 });
 
-
 navMobile.addEventListener("click", () => {
-    burgerMenuHide()
+
+    burgerMenuHide();
+
 });
