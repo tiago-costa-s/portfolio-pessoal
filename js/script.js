@@ -149,8 +149,8 @@ const person = {
             stacks: "HTML5, CSS, Java Script",
             image: "https://i.postimg.cc/G3PT1M7G/calc-imc-advanced-0.png",
             description: "A calculadora: E um programa responsavel por calcular o índice de massa corporal(IMC) de uma pessoa.",
-            linkPreview: " https://km360.netlify.app/",
-            linkRepository: "https://github.com/Tiago-Costa-s/km360"
+            linkPreview: "https://calculadora-imc-advanced.vercel.app/",
+            linkRepository: "https://github.com/tiago-costa-s/calculadora_imc_advanced"
         },
 
         {
@@ -236,7 +236,6 @@ const createProfessionalExperience = () => {
         periodElement.appendChild(spanPeriod);
         infoElement.appendChild(periodElement);
 
-
         professionExperience.appendChild(jobsElement);
     });
 
@@ -280,7 +279,6 @@ projectsResume.forEach((project) => {
     stackElement.textContent = "Tech stack :";
     stackElement.appendChild(spanStack);
     containerProjectELement.appendChild(stackElement);
-
     // links
     const linksProjectElement = document.createElement("div");
     linksProjectElement.classList.add("links-project");
@@ -333,11 +331,9 @@ const containerLeazy = document.querySelector(".containers-leazy");
 function burgerMenuHide() {
     let containerNavMobile = document.querySelector(".container-nav-mobile ");
     containerNavMobile.classList.toggle("hide");
-
 };
 
 function lazyLoad() {
-    // Obtém todas as seções preguiçosas
     const lazySections = document.querySelectorAll('.leazy-section');
 
     lazySections.forEach(section => {
