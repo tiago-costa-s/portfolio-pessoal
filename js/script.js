@@ -159,7 +159,7 @@ const person = {
             stacks: "HTML5, CSS, Java Script",
             image: "https://i.postimg.cc/XvJhwLdn/escritorio-advocacia-netlify-app.png",
             description: "O Law Office: E uma langing page de um escritorio de advocacia",
-            linkPreview: "https://i.postimg.cc/K8dJLjs9/escritorio-advocacia-netlify-app.png",
+            linkPreview: "https://escritorio-advocacia.netlify.app/",
             linkRepository: "https://github.com/tiago-costa-s/Escritorio-Advocacia"
         }
     ]
