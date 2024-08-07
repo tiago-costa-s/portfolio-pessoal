@@ -161,6 +161,16 @@ const person = {
             description: "O Law Office: E uma langing page de um escritorio de advocacia",
             linkPreview: "https://escritorio-advocacia.netlify.app/",
             linkRepository: "https://github.com/tiago-costa-s/Escritorio-Advocacia"
+        },
+
+        {
+            id: 6,
+            name: "To do list",
+            stacks: "React, HTML5, CSS, Java Script",
+            image: "https://i.postimg.cc/NMMpB3wS/todo.png",
+            description: "Um todo list feito em reactjs",
+            linkPreview: "https://todo-react-beta-seven.vercel.app/",
+            linkRepository: "https://github.com/tiago-costa-s/todo_react"
         }
     ]
 }
@@ -175,28 +185,23 @@ const createProfessionalExperience = () => {
         // experiencia profissional
         const jobsElement = document.createElement("div");
         jobsElement.classList.add("jobs");
-
         // cabeçalho
         const headerElement = document.createElement("header")
         jobsElement.appendChild(headerElement);
-
         // titulo
         const titleElement = document.createElement("p");
         titleElement.classList.add("title");
         titleElement.textContent = `${prof.office}`;
         headerElement.appendChild(titleElement);
-
         // regime
         const regimeElement = document.createElement("p");
         regimeElement.classList.add("regime");
         regimeElement.textContent = `${prof.regime}`;
         headerElement.appendChild(regimeElement);
-
         // info
         const infoElement = document.createElement("div");
         infoElement.classList.add("info");
         jobsElement.appendChild(infoElement);
-
         // empresa
         const company = document.createElement("p");
         company.classList.add("company");
@@ -209,7 +214,6 @@ const createProfessionalExperience = () => {
         spanCompany.textContent = `${prof.company}`;
         company.appendChild(spanCompany);
         infoElement.appendChild(company);
-
         // cidade
         const cityElement = document.createElement("p");
         cityElement.classList.add("city");
@@ -222,7 +226,6 @@ const createProfessionalExperience = () => {
         spanGeo.textContent = `${prof.city}`;
         cityElement.appendChild(spanGeo);
         infoElement.appendChild(cityElement);
-
         // periodo
         const periodElement = document.createElement("p");
         periodElement.classList.add("period");
@@ -276,13 +279,12 @@ projectsResume.forEach((project) => {
     stackElement.classList.add("stack");
     const spanStack = document.createElement("span");
     spanStack.textContent = `${project.stacks}`;
-    stackElement.textContent = "Tech stack :";
+    stackElement.textContent = "Tech stack:";
     stackElement.appendChild(spanStack);
     containerProjectELement.appendChild(stackElement);
     // links
     const linksProjectElement = document.createElement("div");
     linksProjectElement.classList.add("links-project");
-
     // link preview
     const previewElement = document.createElement("a");
     previewElement.classList.add("previewLink");
@@ -299,7 +301,6 @@ projectsResume.forEach((project) => {
     spanPreview.textContent = "Link Preview"
     previewElement.appendChild(spanPreview);
     linksProjectElement.appendChild(previewElement);
-
     // link github
     const githubElement = document.createElement("a");
     githubElement.classList.add("githubLink");
@@ -319,6 +320,7 @@ projectsResume.forEach((project) => {
     containerProjectELement.appendChild(linksProjectElement);
 
     projectsListElement.appendChild(projectElement);
+    
 });
 
 // Seletores
@@ -329,8 +331,10 @@ const containerLeazy = document.querySelector(".containers-leazy");
 
 // Function
 function burgerMenuHide() {
+
     let containerNavMobile = document.querySelector(".container-nav-mobile ");
     containerNavMobile.classList.toggle("hide");
+
 };
 
 function lazyLoad() {
