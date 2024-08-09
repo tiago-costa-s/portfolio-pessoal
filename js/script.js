@@ -171,6 +171,16 @@ const person = {
             description: "Um todo list feito em reactjs",
             linkPreview: "https://todo-react-beta-seven.vercel.app/",
             linkRepository: "https://github.com/tiago-costa-s/todo_react"
+        },
+
+        {
+            id: 7,
+            name: "Calculadora de Imc",
+            stacks: "React, HTML5, CSS, Java Script",
+            image: "https://i.postimg.cc/mk9jFVy4/calculadora-imc-react.png",
+            description: "A calculadora: E um programa responsavel por calcular o índice de massa corporal(IMC) de uma pessoa",
+            linkPreview: "https://calc-imc-react-green.vercel.app/",
+            linkRepository: "https://github.com/tiago-costa-s/calc_imc_react"
         }
     ]
 }
@@ -320,7 +330,7 @@ projectsResume.forEach((project) => {
     containerProjectELement.appendChild(linksProjectElement);
 
     projectsListElement.appendChild(projectElement);
-    
+
 });
 
 // Seletores
@@ -346,7 +356,7 @@ function lazyLoad() {
             // Adiciona a classe 'loaded' para evitar o carregamento repetido
             section.classList.add('loaded');
             // Carrega qualquer conteúdo adicional ou realiza ações específicas da seção, se necessário
-        }        
+        }
     });
 
 }
